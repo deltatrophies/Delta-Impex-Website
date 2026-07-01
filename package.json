@@ -1,0 +1,43 @@
+{
+  "name": "delta-impex-machinery",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Delta Impex industrial machinery catalog and enquiry website",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n web,api -c cyan,yellow \"vite\" \"node --watch server/index.js\"",
+    "dev:web": "vite",
+    "dev:api": "node --watch server/index.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server/index.js",
+    "check": "npm run build"
+  },
+  "dependencies": {
+    "@radix-ui/react-select": "2.2.6",
+    "@tanstack/react-query": "5.90.21",
+    "axios": "1.16.0",
+    "clsx": "2.1.1",
+    "compression": "1.8.1",
+    "cors": "2.8.5",
+    "express": "5.1.0",
+    "helmet": "8.1.0",
+    "lucide-react": "0.544.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-router-dom": "7.18.1",
+    "sonner": "2.0.7",
+    "tailwind-merge": "3.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.7.0",
+    "autoprefixer": "10.4.21",
+    "concurrently": "9.2.3",
+    "postcss": "8.5.16",
+    "tailwindcss": "3.4.17",
+    "vite": "6.4.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

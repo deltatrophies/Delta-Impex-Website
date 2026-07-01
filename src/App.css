@@ -1,0 +1,5 @@
+/* Reset App.css - we rely on index.css + Tailwind */
+.App {
+  text-align: left;
+  min-height: 100vh;
+}

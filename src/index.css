@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@400;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --di-navy: #0b131e;
+  --di-charcoal: #1a2332;
+  --di-charcoal-2: #131c28;
+  --di-light: #f8fafc;
+  --di-amber: #d4a017;
+  --di-amber-hover: #b58812;
+  --di-steel: #8e9bae;
+  --di-border-dark: rgba(255, 255, 255, 0.1);
+  --di-border-light: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  color: var(--di-navy);
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: "Chivo", "Manrope", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 40% 9%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 40% 9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 40% 9%;
+    --primary: 215 40% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 215 40% 9%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 40 78% 46%;
+    --accent-foreground: 215 40% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 40 78% 46%;
+    --radius: 0.25rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Industrial utility classes */
+.di-overline {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.di-grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.di-img-placeholder {
+  position: relative;
+  background:
+    linear-gradient(135deg, #1a2332 0%, #0b131e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.55);
+  overflow: hidden;
+}
+
+.di-img-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(212, 160, 23, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 160, 23, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+
+/* Smooth transitions for interactive elements */
+.di-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+.di-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background-color: var(--di-amber);
+  transition: width 0.25s ease;
+}
+.di-link:hover::after,
+.di-link[data-active="true"]::after {
+  width: 100%;
+}
+
+/* Section labels */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.section-label::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background: var(--di-amber);
+}
+
+/* Seamless fixed-size media for category and featured-machine cards */
+.machine-card-media {
+  isolation: isolate;
+  background-color: #d8d3cd;
+}
+
+.machine-card-media::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: -10%;
+  background-image: var(--machine-card-image);
+  background-position: center;
+  background-size: cover;
+  filter: blur(18px) saturate(0.8);
+  opacity: 0.3;
+  transform: scale(1.12);
+}
+
+.machine-card-media::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: rgba(216, 211, 205, 0.22);
+  pointer-events: none;
+}
+
+.machine-card-media-image {
+  transform: scale(1);
+  transform-origin: center;
+}
+
+/* Premium machine gallery interaction */
+.machine-gallery-card {
+  isolation: isolate;
+}
+
+.machine-gallery-image {
+  transform: scale(1);
+  transition: transform 500ms ease-out;
+}
+
+.machine-gallery-gradient {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.58) 0%,
+    rgba(0, 0, 0, 0.18) 38%,
+    rgba(0, 0, 0, 0) 72%
+  );
+}
+
+.machine-gallery-hover-overlay {
+  opacity: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.28) 48%,
+    rgba(0, 0, 0, 0.08) 100%
+  );
+  transition: opacity 500ms ease-out;
+}
+
+.machine-gallery-copy {
+  z-index: 1;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 500ms ease-out,
+    transform 500ms ease-out;
+}
+
+.machine-gallery-title {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.machine-gallery-card:focus-visible {
+  outline: 2px solid #d4a017;
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .machine-gallery-copy {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  .machine-gallery-card:hover .machine-gallery-image,
+  .machine-gallery-card:focus .machine-gallery-image,
+  .machine-gallery-card:focus-visible .machine-gallery-image {
+    transform: scale(1.06);
+  }
+
+  .machine-gallery-card:hover .machine-gallery-hover-overlay,
+  .machine-gallery-card:focus .machine-gallery-hover-overlay,
+  .machine-gallery-card:focus-visible .machine-gallery-hover-overlay {
+    opacity: 1;
+  }
+
+  .machine-gallery-card:hover .machine-gallery-copy,
+  .machine-gallery-card:focus .machine-gallery-copy,
+  .machine-gallery-card:focus-visible .machine-gallery-copy {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer base {
+  [data-debug-wrapper="true"] {
+    display: contents !important;
+  }
+}
