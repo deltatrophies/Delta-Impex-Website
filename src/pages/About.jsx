@@ -52,7 +52,7 @@ export default function About() {
         <div className="absolute inset-0">
           <img
             src="/images/pages/about/hero-w2000.jpg"
-            alt="Delta Impex workshop"
+            alt="Delta Impex Inc. workshop"
             className="w-full h-full object-cover opacity-45"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B131E] via-[#0B131E]/80 to-[#0B131E]/30" />
@@ -65,7 +65,7 @@ export default function About() {
             data-testid="about-hero-heading"
             className="font-heading text-4xl sm:text-5xl lg:text-7xl font-black text-white tracking-tight leading-[1.05] mt-6"
           >
-            About <span className="text-[#D4A017]">Delta Impex</span>
+            About <span className="text-[#D4A017]">Delta Impex Inc.</span>
           </h1>
           <p className="text-lg md:text-xl text-white/75 max-w-3xl mt-6 leading-relaxed">
             Reliable Industrial Machinery Solutions for Businesses.
@@ -84,7 +84,7 @@ export default function About() {
               Who We Are
             </h2>
             <p className="text-[#475569] text-base leading-relaxed mt-6">
-              Delta Impex is a professional industrial machinery company
+              Delta Impex Inc. is a professional industrial machinery company
               dealing in a wide range of machines for different industries. We
               showcase CNC machines, plastic machines, woodworking machines,
               laser machines, sanding machines, and sawing machines. Our focus
@@ -118,7 +118,7 @@ export default function About() {
             precision work, a plastic machine for processing, a woodworking
             machine for furniture or material work, a laser machine for
             cutting and engraving, a sanding machine for finishing, or a
-            sawing machine for cutting, Delta Impex provides a clean and
+            sawing machine for cutting, Delta Impex Inc. provides a clean and
             organized platform to showcase available machinery.
           </p>
         </div>
@@ -233,7 +233,7 @@ export default function About() {
             data-testid="about-cta-contact"
             className="mt-10 inline-flex items-center gap-2 bg-[#D4A017] text-[#0B131E] hover:bg-[#B58812] px-8 py-4 rounded-sm font-bold text-sm uppercase tracking-wider transition-colors"
           >
-            Contact Delta Impex <ArrowRight className="w-4 h-4" />
+            Contact Delta Impex Inc. <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </section>

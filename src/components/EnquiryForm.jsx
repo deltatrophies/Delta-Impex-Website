@@ -90,7 +90,7 @@ export default function EnquiryForm({ productSlug, defaultMachine, compact = fal
           Enquiry Received
         </h3>
         <p className="text-[#475569] mb-6">
-          Thank you for contacting Delta Impex. Our team will reach out to you
+          Thank you for contacting Delta Impex Inc. Our team will reach out to you
           shortly with machine details and guidance.
         </p>
         <button

@@ -20,11 +20,11 @@ export default function Footer() {
               <Factory className="w-5 h-5" strokeWidth={2.5} />
             </span>
             <span className="font-heading font-black tracking-tight text-white text-2xl">
-              Delta<span className="text-[#D4A017]">Impex</span>
+              Delta<span className="text-[#D4A017]">Impex</span> Inc.
             </span>
           </Link>
           <p className="mt-6 text-sm leading-relaxed">
-            Delta Impex deals in industrial machinery including CNC machines,
+            Delta Impex Inc. deals in industrial machinery including CNC machines,
             plastic machines, woodworking machines, laser machines, sanding
             machines, and sawing machines.
           </p>
@@ -83,7 +83,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-white/10 text-center text-white/50 text-xs tracking-wider">
-        © {new Date().getFullYear()} Delta Impex. All Rights Reserved.
+        © {new Date().getFullYear()} Delta Impex Inc. All Rights Reserved.
       </div>
     </footer>
   );

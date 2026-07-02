@@ -112,12 +112,12 @@ export default function ProductDetail() {
           <div className="lg:col-span-5 text-white">
             <Link
               to="/products"
-              className="inline-flex items-center gap-2 text-white/60 hover:text-[#D4A017] text-xs font-bold uppercase tracking-wider mb-6"
+              className="flex w-fit items-center gap-2 text-white/60 hover:text-[#D4A017] text-xs font-bold uppercase tracking-wider mb-6"
               data-testid="back-to-products"
             >
               <ArrowLeft className="w-4 h-4" /> Back to all machines
             </Link>
-            <span className="di-overline text-[#D4A017]">
+            <span className="block di-overline text-[#D4A017]">
               {product.categoryName}
             </span>
             <h1
@@ -214,7 +214,7 @@ export default function ProductDetail() {
                 Contact for Price
               </p>
               <p className="text-white/65 text-sm mt-3 leading-relaxed">
-                Reach out to Delta Impex for current pricing, lead time, and
+                Reach out to Delta Impex Inc. for current pricing, lead time, and
                 customization options for this machine.
               </p>
             </div>

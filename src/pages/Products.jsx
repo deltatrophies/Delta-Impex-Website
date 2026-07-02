@@ -133,7 +133,7 @@ export default function Products() {
             Need More Details About Any Machine?
           </h2>
           <p className="text-white/70 text-lg leading-relaxed mt-6 max-w-2xl mx-auto">
-            Share your requirement with Delta Impex and we will help you with
+            Share your requirement with Delta Impex Inc. and we will help you with
             suitable machine details, availability, and guidance.
           </p>
           <Link

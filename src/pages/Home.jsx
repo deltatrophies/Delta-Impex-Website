@@ -24,7 +24,7 @@ const FEATURES = [
   {
     icon: Layers,
     title: "Wide Range of Machines",
-    text: "Delta Impex offers multiple types of machines including CNC, plastic, woodworking, laser, sanding, and sawing machines.",
+    text: "Delta Impex Inc. offers multiple types of machines including CNC, plastic, woodworking, laser, sanding, and sawing machines.",
   },
   {
     icon: Wrench,
@@ -44,7 +44,7 @@ const FEATURES = [
   {
     icon: Factory,
     title: "Industrial Experience",
-    text: "Delta Impex understands industrial machine requirements and helps businesses find suitable machinery.",
+    text: "Delta Impex Inc. understands industrial machine requirements and helps businesses find suitable machinery.",
   },
   {
     icon: Users,
@@ -104,7 +104,7 @@ export default function Home() {
   return (
     <div data-testid="page-home">
       {/* HERO */}
-      <section className="relative min-h-[92vh] flex items-center bg-[#0B131E] overflow-hidden pt-20">
+      <section className="relative min-h-[88vh] flex items-center bg-[#0B131E] overflow-hidden pt-20">
         <div className="absolute inset-0">
           <video
             className="w-full h-full object-cover opacity-50"
@@ -120,13 +120,13 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B131E] via-[#0B131E]/85 to-[#0B131E]/30" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 w-full">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 w-full -translate-y-6 lg:-translate-y-12">
           <div className="max-w-3xl">
             <span
               data-testid="hero-overline"
               className="section-label di-overline text-[#D4A017]"
             >
-              Delta Impex — Since Day One
+              Delta Impex Inc. — Since Day One
             </span>
             <h1
               data-testid="hero-heading"
@@ -141,7 +141,7 @@ export default function Home() {
               data-testid="hero-subheading"
               className="mt-8 text-lg text-white/75 max-w-2xl leading-relaxed"
             >
-              Delta Impex provides reliable CNC machines, plastic machines,
+              Delta Impex Inc. provides reliable CNC machines, plastic machines,
               woodworking machines, laser machines, sanding machines, and
               sawing machines for industrial and commercial needs.
             </p>
@@ -180,7 +180,7 @@ export default function Home() {
       </section>
 
       {/* CATEGORIES */}
-      <section className="bg-[#F8FAFC] py-20 md:py-28" data-testid="section-categories">
+      <section className="bg-[#F8FAFC] py-16 md:py-24" data-testid="section-categories">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-end mb-14">
             <div className="lg:col-span-7">
@@ -236,7 +236,7 @@ export default function Home() {
       </section>
 
       {/* FEATURED PRODUCTS */}
-      <section className="bg-white py-20 md:py-28" data-testid="section-featured">
+      <section className="bg-white py-16 md:py-24" data-testid="section-featured">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
             <div>
@@ -270,7 +270,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-14">
             <span className="section-label di-overline text-[#D4A017]">
-              Why Delta Impex
+              Why Delta Impex Inc.
             </span>
             <h2 className="font-heading text-3xl md:text-5xl font-bold text-white tracking-tight mt-4">
               Built for Industry.<br />
@@ -313,7 +313,7 @@ export default function Home() {
             <div className="relative">
               <img
                 src="/images/pages/home/workshop-preview-w1400.jpg"
-                alt="Delta Impex workshop"
+                alt="Delta Impex Inc. workshop"
                 className="w-full h-[460px] object-cover rounded-sm"
               />
               <div className="absolute -bottom-8 -right-4 md:-right-8 bg-[#D4A017] text-[#0B131E] p-6 md:p-8 rounded-sm max-w-xs shadow-xl">
@@ -326,13 +326,13 @@ export default function Home() {
           </div>
           <div className="lg:col-span-6">
             <span className="section-label di-overline text-[#D4A017]">
-              About Delta Impex
+              About Delta Impex Inc.
             </span>
             <h2 className="font-heading text-3xl md:text-5xl font-bold text-[#0B131E] tracking-tight mt-4 leading-tight">
               An industrial machinery company built for serious business.
             </h2>
             <p className="text-[#475569] text-base leading-relaxed mt-6">
-              Delta Impex is an industrial machinery company focused on
+              Delta Impex Inc. is an industrial machinery company focused on
               providing reliable machine solutions for businesses and
               industries. We deal in CNC machines, plastic machines,
               woodworking machines, laser machines, sanding machines, and
@@ -415,7 +415,7 @@ export default function Home() {
             for Your <span className="text-[#D4A017]">Business?</span>
           </h2>
           <p className="text-white/70 text-lg leading-relaxed mt-6 max-w-2xl mx-auto">
-            Contact Delta Impex today and share your machinery requirement.
+            Contact Delta Impex Inc. today and share your machinery requirement.
             Our team will help you find a suitable machine according to your
             work, budget, and industry needs.
           </p>

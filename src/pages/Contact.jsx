@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
-import { Phone, Mail, MapPin, MapPinned } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import EnquiryForm from "../components/EnquiryForm";
 import { findProduct } from "../data/catalog";
 import { CONTACT_DETAILS, CONTACT_LABELS } from "../data/contact";
@@ -63,7 +63,7 @@ export default function Contact() {
         <div className="absolute inset-0">
           <img
             src="/images/pages/contact/hero-w2000.jpg"
-            alt="Contact Delta Impex"
+            alt="Contact Delta Impex Inc."
             className="w-full h-full object-cover opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B131E] via-[#0B131E]/85 to-[#0B131E]/40" />
@@ -76,7 +76,7 @@ export default function Contact() {
             data-testid="contact-hero-heading"
             className="font-heading text-4xl sm:text-5xl lg:text-7xl font-black text-white tracking-tight leading-[1.05] mt-6"
           >
-            Contact <span className="text-[#D4A017]">Delta Impex</span>
+            Contact <span className="text-[#D4A017]">Delta Impex Inc.</span>
           </h1>
           <p className="text-lg text-white/75 max-w-2xl mt-6 leading-relaxed">
             Get in touch with us for machine enquiries, product details,
@@ -163,19 +163,16 @@ export default function Contact() {
               Our Location
             </h2>
           </div>
-          <div
-            data-testid="map-placeholder"
-            className="di-img-placeholder w-full h-[400px] border border-[#E2E8F0] rounded-sm"
-          >
-            <div className="relative z-10 text-center">
-              <MapPinned className="w-12 h-12 text-[#D4A017] mx-auto mb-4" />
-              <p className="di-overline text-white/80">
-                [Google Map Location Placeholder]
-              </p>
-              <p className="text-white/55 text-sm mt-2 max-w-md mx-auto">
-                Map embed will appear here once location coordinates are added.
-              </p>
-            </div>
+          <div className="w-full h-[400px] overflow-hidden border border-[#E2E8F0] rounded-sm">
+            <iframe
+              src={CONTACT_DETAILS.googleMapsEmbedUrl}
+              title="Delta Impex Inc. location"
+              data-testid="location-map"
+              className="w-full h-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>
@@ -188,7 +185,7 @@ export default function Contact() {
           </h2>
           <p className="text-white/70 text-lg leading-relaxed mt-6 max-w-2xl mx-auto">
             Whether you need a new machine, old machine, or guidance about a
-            suitable machine category, Delta Impex is ready to help.
+            suitable machine category, Delta Impex Inc. is ready to help.
           </p>
           <a
             href="#enquiry"

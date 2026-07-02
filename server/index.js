@@ -23,7 +23,7 @@ app.use(cors());
 app.use(express.json({ limit: "64kb" }));
 
 app.get("/api/", (_request, response) => {
-  response.json({ message: "Delta Impex API is running" });
+  response.json({ message: "Delta Impex Inc. API is running" });
 });
 
 app.get("/api/health", (_request, response) => {
@@ -124,5 +124,5 @@ app.use((error, _request, response, _next) => {
 });
 
 app.listen(port, "0.0.0.0", () => {
-  console.log(`Delta Impex server listening on http://localhost:${port}`);
+  console.log(`Delta Impex Inc. server listening on http://localhost:${port}`);
 });

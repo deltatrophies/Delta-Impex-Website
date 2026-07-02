@@ -1,4 +1,4 @@
-// Delta Impex - Product Catalog
+// Delta Impex Inc. - Product Catalog
 // Image assets are stored locally under /public/images so the website does
 // not depend on third-party image URLs at runtime.
 

@@ -46,7 +46,7 @@ export default function Navbar() {
               <Factory className="w-5 h-5" strokeWidth={2.5} />
             </span>
             <span className="font-heading font-black tracking-tight text-white text-2xl">
-              Delta<span className="text-[#D4A017]">Impex</span>
+              Delta<span className="text-[#D4A017]">Impex</span> Inc.
             </span>
           </Link>
 
