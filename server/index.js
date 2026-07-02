@@ -11,8 +11,7 @@ const rootDir = path.resolve(__dirname, "..");
 const distDir = path.join(rootDir, "dist");
 const port = Number(process.env.PORT || 8787);
 const googleSheetsWebhookUrl =
-  process.env.GOOGLE_SHEETS_WEBHOOK_URL ||
-  "https://script.google.com/macros/s/AKfycbzye-vCJbp8nfd9n7q-HxiQb-fMxdJJC2CzgN8eYKZu0OtYtrlr2oxbPUMNWjTO1Nc-/exec";
+  process.env.GOOGLE_SHEETS_WEBHOOK_URL;
 
 const app = express();
 
