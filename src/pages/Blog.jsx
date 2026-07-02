@@ -33,7 +33,16 @@ export default function Blog() {
       />
 
       <section className="relative bg-[#0B131E] pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 di-grid-bg opacity-40" />
+        <div className="absolute inset-0">
+          <img
+            src="/images/pages/home/gallery-cnc-machinery-w1200.jpg"
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B131E] via-[#0B131E]/90 to-[#0B131E]/55" />
+          <div className="absolute inset-0 di-grid-bg opacity-20" />
+        </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <span className="section-label di-overline text-[#D4A017]">
             Machinery Knowledge

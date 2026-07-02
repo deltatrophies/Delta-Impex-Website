@@ -16,6 +16,13 @@
   --di-border-light: #e2e8f0;
 }
 
+/* Match the preferred 105% desktop visual scale at normal browser zoom. */
+@media (min-width: 1024px) {
+  html {
+    font-size: 105%;
+  }
+}
+
 body {
   margin: 0;
   font-family: "Manrope", system-ui, -apple-system, sans-serif;
