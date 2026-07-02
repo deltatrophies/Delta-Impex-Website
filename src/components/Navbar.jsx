@@ -7,6 +7,7 @@ const links = [
   { to: "/", label: "Home", testid: "nav-link-home" },
   { to: "/about", label: "About Us", testid: "nav-link-about" },
   { to: "/products", label: "Products", testid: "nav-link-products" },
+  { to: "/blog", label: "Blog", testid: "nav-link-blog" },
   { to: "/contact", label: "Contact Us", testid: "nav-link-contact" },
 ];
 
@@ -50,7 +51,7 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-10">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-10">
             {links.map((l) => (
               <NavLink
                 key={l.to}

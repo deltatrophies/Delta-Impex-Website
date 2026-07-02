@@ -3,6 +3,8 @@ import { Link, useSearchParams } from "react-router-dom";
 import { ArrowRight, Filter } from "lucide-react";
 import { CATEGORIES, PRODUCTS } from "../data/catalog";
 import ProductCard from "../components/ProductCard";
+import SEO from "../components/SEO";
+import { SITE } from "../data/site";
 
 const ALL_FILTERS = [
   { id: "all", label: "All Machines" },
@@ -43,6 +45,28 @@ export default function Products() {
 
   return (
     <div data-testid="page-products">
+      <SEO
+        title="Industrial Machines for Sale | Delta Impex Inc."
+        description="Explore new and used CNC cutting, plastic moulding, woodworking, drilling, laser, sanding and sawing machines available from Delta Impex Inc."
+        path="/products"
+        image="/images/pages/products/hero-w2000.jpg"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          url: `${SITE.url}/products`,
+          name: "Industrial Machines for Sale",
+          description: "New and used industrial machinery supplied by Delta Impex Inc.",
+          mainEntity: {
+            "@type": "ItemList",
+            itemListElement: PRODUCTS.map((product, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              url: `${SITE.url}/products/${product.slug}`,
+              name: product.name,
+            })),
+          },
+        }}
+      />
       {/* HERO */}
       <section className="relative min-h-[60vh] flex items-center bg-[#0B131E] overflow-hidden pt-20">
         <div className="absolute inset-0">

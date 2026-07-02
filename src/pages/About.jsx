@@ -9,6 +9,8 @@ import {
   TrendingUp,
 } from "lucide-react";
 import { CATEGORIES } from "../data/catalog";
+import SEO from "../components/SEO";
+import { SITE } from "../data/site";
 
 const VALUES = [
   {
@@ -45,8 +47,24 @@ const RANGE = [
 ];
 
 export default function About() {
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    url: `${SITE.url}/about`,
+    name: "About Delta Impex Inc.",
+    description: "Learn about Delta Impex Inc., an industrial machinery supplier based in Jalandhar, Punjab.",
+    mainEntity: { "@id": `${SITE.url}/#organization` },
+  };
+
   return (
     <div data-testid="page-about">
+      <SEO
+        title="About Delta Impex Inc. | Industrial Machinery Company"
+        description="Learn about Delta Impex Inc., a Jalandhar-based supplier of new and used CNC, plastic, woodworking, laser, sanding and sawing machines."
+        path="/about"
+        image="/images/pages/about/hero-w2000.jpg"
+        structuredData={aboutSchema}
+      />
       {/* HERO */}
       <section className="relative min-h-[70vh] flex items-center bg-[#0B131E] overflow-hidden pt-20">
         <div className="absolute inset-0">

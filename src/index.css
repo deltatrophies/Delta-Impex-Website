@@ -139,6 +139,41 @@ code {
   background: var(--di-amber);
 }
 
+/* Long-form machinery guides */
+.blog-article > p {
+  margin-bottom: 1.5rem;
+}
+
+.blog-article section {
+  scroll-margin-top: 7rem;
+}
+
+.blog-article h2 {
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+  color: var(--di-navy);
+  font-family: "Chivo", "Manrope", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.blog-article section p {
+  margin-bottom: 1.25rem;
+}
+
+.blog-article ul {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.blog-article li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
 /* Seamless fixed-size media for category and featured-machine cards */
 .machine-card-media {
   isolation: isolate;

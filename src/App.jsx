@@ -11,6 +11,9 @@ import About from "@/pages/About";
 import Products from "@/pages/Products";
 import ProductDetail from "@/pages/ProductDetail";
 import Contact from "@/pages/Contact";
+import Blog from "@/pages/Blog";
+import BlogDetail from "@/pages/BlogDetail";
+import NotFound from "@/pages/NotFound";
 
 function App() {
   return (
@@ -25,7 +28,10 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/products/:slug" element={<ProductDetail />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<Home />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogDetail />} />
+            <Route path="/404" element={<NotFound />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />

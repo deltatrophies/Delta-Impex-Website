@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://www.deltaimpexinc.com/sitemap.xml
+Host: www.deltaimpexinc.com

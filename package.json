@@ -5,12 +5,12 @@
   "description": "Delta Impex Inc. industrial machinery catalog and enquiry website",
   "type": "module",
   "scripts": {
-    "dev": "concurrently -k -n web,api -c cyan,yellow \"vite\" \"node --watch server/index.js\"",
+    "dev": "concurrently -k -n web,api -c cyan,yellow \"vite\" \"node --env-file=.env --watch server/index.js\"",
     "dev:web": "vite",
-    "dev:api": "node --watch server/index.js",
-    "build": "vite build",
+    "dev:api": "node --env-file=.env --watch server/index.js",
+    "build": "node scripts/generate-sitemap.mjs && vite build",
     "preview": "vite preview",
-    "start": "node server/index.js",
+    "start": "node --env-file=.env server/index.js",
     "check": "npm run build"
   },
   "dependencies": {

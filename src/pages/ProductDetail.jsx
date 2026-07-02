@@ -4,6 +4,8 @@ import { ArrowLeft, CheckCircle2, ChevronRight } from "lucide-react";
 import { findProduct, PRODUCTS } from "../data/catalog";
 import ProductCard from "../components/ProductCard";
 import EnquiryForm from "../components/EnquiryForm";
+import SEO from "../components/SEO";
+import { SITE, absoluteUrl } from "../data/site";
 
 const SPEC_LABELS = {
   machine_type: "Machine Type",
@@ -40,9 +42,37 @@ export default function ProductDetail() {
 
   const isNew = product.condition === "New";
   const gallery = product.gallery;
+  const productUrl = `${SITE.url}/products/${product.slug}`;
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `${productUrl}#product`,
+    name: product.name,
+    description: product.description,
+    image: product.gallery.map(absoluteUrl),
+    category: product.categoryName,
+    url: productUrl,
+  };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE.url },
+      { "@type": "ListItem", position: 2, name: "Products", item: `${SITE.url}/products` },
+      { "@type": "ListItem", position: 3, name: product.name, item: productUrl },
+    ],
+  };
 
   return (
     <div data-testid="page-product-detail" className="bg-white">
+      <SEO
+        title={`${product.name} | Delta Impex Inc.`}
+        description={`${product.description} Contact Delta Impex Inc. in Jalandhar for availability and details.`}
+        path={`/products/${product.slug}`}
+        image={product.image}
+        type="product"
+        structuredData={[productSchema, breadcrumbSchema]}
+      />
       {/* Breadcrumb */}
       <div className="bg-[#0B131E] pt-28 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-2 text-xs di-overline text-white/55">

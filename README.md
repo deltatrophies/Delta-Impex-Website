@@ -41,3 +41,16 @@ GOOGLE_SHEETS_WEBHOOK_URL=https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/
 Use `npm run build` as the build command and `dist` as the output directory.
 The frontend submits to the same-origin `/api/enquiries` endpoint in both local
 and Vercel environments.
+
+## SEO and blog
+
+- Canonical production URL: `https://www.deltaimpexinc.com`
+- `robots.txt`, `sitemap.xml`, social metadata and JSON-LD are included.
+- The sitemap is regenerated from the product and blog data during every build.
+- Blog articles are managed in `src/data/blog.js`.
+- Page metadata and structured data are managed through `src/components/SEO.jsx`.
+
+After each production deployment, submit
+`https://www.deltaimpexinc.com/sitemap.xml` in Google Search Console. When a new
+article is published, use an accurate published/updated date and keep the guide
+specific, original and useful to machinery buyers.

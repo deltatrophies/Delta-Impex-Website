@@ -3,8 +3,10 @@ import { useLocation, useSearchParams } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
 import EnquiryForm from "../components/EnquiryForm";
 import { findProduct } from "../data/catalog";
-import { CONTACT_DETAILS, CONTACT_LABELS } from "../data/contact";
+import { CONTACT_DETAILS, CONTACT_LABELS, hasContactValue } from "../data/contact";
 import { Clock, MessageCircle } from "../components/icons/legacy";
+import SEO from "../components/SEO";
+import { SITE } from "../data/site";
 
 const CONTACTS = [
   {
@@ -37,7 +39,7 @@ const CONTACTS = [
     value: CONTACT_DETAILS.businessHours,
     testid: "contact-hours",
   },
-];
+].filter((contact) => hasContactValue(contact.value));
 
 export default function Contact() {
   const [searchParams] = useSearchParams();
@@ -58,6 +60,19 @@ export default function Contact() {
 
   return (
     <div data-testid="page-contact" className="bg-white">
+      <SEO
+        title="Contact Delta Impex Inc. | Machinery Supplier Jalandhar"
+        description="Contact Delta Impex Inc. in Jalandhar, Punjab for CNC, plastic moulding, woodworking, laser, sanding and sawing machine enquiries."
+        path="/contact"
+        image="/images/pages/contact/hero-w2000.jpg"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          url: `${SITE.url}/contact`,
+          name: "Contact Delta Impex Inc.",
+          mainEntity: { "@id": `${SITE.url}/#organization` },
+        }}
+      />
       {/* HERO */}
       <section className="relative min-h-[60vh] flex items-center bg-[#0B131E] overflow-hidden pt-20">
         <div className="absolute inset-0">
@@ -88,7 +103,7 @@ export default function Contact() {
       {/* CONTACT INFO */}
       <section className="bg-[#F8FAFC] py-20" data-testid="section-contact-info">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {CONTACTS.map((c) => {
               const Icon = c.icon;
               return (

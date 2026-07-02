@@ -10,8 +10,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, "..");
 const distDir = path.join(rootDir, "dist");
 const port = Number(process.env.PORT || 8787);
-const googleSheetsWebhookUrl =
-  process.env.GOOGLE_SHEETS_WEBHOOK_URL;
+const googleSheetsWebhookUrl = process.env.GOOGLE_SHEETS_WEBHOOK_URL;
 
 const app = express();
 
@@ -72,6 +71,12 @@ app.post("/api/enquiries", async (request, response, next) => {
           ? input.product_slug.trim().slice(0, 200)
           : null,
     };
+
+    if (!googleSheetsWebhookUrl) {
+      return response.status(503).json({
+        detail: "Enquiry service is unavailable",
+      });
+    }
 
     const sheetResponse = await fetch(googleSheetsWebhookUrl, {
       method: "POST",

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Factory, Phone, Mail, MapPin } from "lucide-react";
 import { CATEGORIES } from "../data/catalog";
-import { CONTACT_DETAILS } from "../data/contact";
+import { CONTACT_DETAILS, hasContactValue } from "../data/contact";
 
 export default function Footer() {
   return (
@@ -38,6 +38,7 @@ export default function Footer() {
             <li><Link className="hover:text-white" to="/" data-testid="footer-link-home">Home</Link></li>
             <li><Link className="hover:text-white" to="/about" data-testid="footer-link-about">About Us</Link></li>
             <li><Link className="hover:text-white" to="/products" data-testid="footer-link-products">Products</Link></li>
+            <li><Link className="hover:text-white" to="/blog" data-testid="footer-link-blog">Machinery Blog</Link></li>
             <li><Link className="hover:text-white" to="/contact" data-testid="footer-link-contact">Contact Us</Link></li>
           </ul>
         </div>
@@ -68,15 +69,29 @@ export default function Footer() {
           <ul className="space-y-4 text-sm">
             <li className="flex items-start gap-3">
               <Phone className="w-4 h-4 text-[#D4A017] mt-1" />
-              <span data-testid="footer-phone">{CONTACT_DETAILS.phone}</span>
+              <a data-testid="footer-phone" href={`tel:+91${CONTACT_DETAILS.phone}`} className="hover:text-white">
+                +91 {CONTACT_DETAILS.phone}
+              </a>
             </li>
-            <li className="flex items-start gap-3">
-              <Mail className="w-4 h-4 text-[#D4A017] mt-1" />
-              <span data-testid="footer-email">{CONTACT_DETAILS.email}</span>
-            </li>
+            {hasContactValue(CONTACT_DETAILS.email) && (
+              <li className="flex items-start gap-3">
+                <Mail className="w-4 h-4 text-[#D4A017] mt-1" />
+                <a data-testid="footer-email" href={`mailto:${CONTACT_DETAILS.email}`} className="hover:text-white">
+                  {CONTACT_DETAILS.email}
+                </a>
+              </li>
+            )}
             <li className="flex items-start gap-3">
               <MapPin className="w-4 h-4 text-[#D4A017] mt-1" />
-              <span data-testid="footer-address">{CONTACT_DETAILS.address}</span>
+              <a
+                data-testid="footer-address"
+                href={CONTACT_DETAILS.googleMapsUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-white"
+              >
+                {CONTACT_DETAILS.address}
+              </a>
             </li>
           </ul>
         </div>

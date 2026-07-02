@@ -12,6 +12,9 @@ import {
 import { CATEGORIES, PRODUCTS } from "../data/catalog";
 import ProductCard from "../components/ProductCard";
 import { Wrench } from "../components/icons/legacy";
+import SEO from "../components/SEO";
+import { BLOG_POSTS } from "../data/blog";
+import { ORGANIZATION_SCHEMA, WEBSITE_SCHEMA } from "../data/site";
 
 const TRUST_POINTS = [
   "Old & New Machines",
@@ -103,6 +106,12 @@ export default function Home() {
 
   return (
     <div data-testid="page-home">
+      <SEO
+        title="Delta Impex Inc. | Industrial Machinery Supplier in Jalandhar"
+        description="Delta Impex Inc. supplies new and used CNC, plastic moulding, woodworking, laser, sanding and sawing machines from Jalandhar, Punjab."
+        path="/"
+        structuredData={[ORGANIZATION_SCHEMA, WEBSITE_SCHEMA]}
+      />
       {/* HERO */}
       <section className="relative min-h-[88vh] flex items-center bg-[#0B131E] overflow-hidden pt-20">
         <div className="absolute inset-0">
@@ -397,6 +406,55 @@ export default function Home() {
                   </h3>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* MACHINERY GUIDES */}
+      <section className="bg-[#F8FAFC] py-16 md:py-24" data-testid="section-blog-preview">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+            <div>
+              <span className="section-label di-overline text-[#D4A017]">Expert Resources</span>
+              <h2 className="font-heading text-3xl md:text-5xl font-bold text-[#0B131E] tracking-tight mt-4">
+                Machinery Buying Guides
+              </h2>
+            </div>
+            <Link
+              to="/blog"
+              className="text-sm font-bold uppercase tracking-wider text-[#0B131E] inline-flex items-center gap-2 border-b border-[#D4A017] pb-1 hover:gap-3 transition-all"
+            >
+              View All Guides <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {BLOG_POSTS.slice(0, 3).map((post) => (
+              <article key={post.slug} className="bg-white border border-[#E2E8F0] rounded-sm overflow-hidden group">
+                <Link to={`/blog/${post.slug}`} className="block h-52 overflow-hidden bg-[#D8D3CD]">
+                  <img
+                    src={post.image}
+                    alt={post.imageAlt}
+                    loading="lazy"
+                    className="w-full h-full object-contain group-hover:scale-[1.04] transition-transform duration-500"
+                  />
+                </Link>
+                <div className="p-6">
+                  <p className="di-overline text-[#D4A017]">{post.category}</p>
+                  <h3 className="font-heading text-xl font-bold leading-snug mt-3">
+                    <Link to={`/blog/${post.slug}`} className="hover:text-[#B58812] transition-colors">
+                      {post.title}
+                    </Link>
+                  </h3>
+                  <p className="text-[#64748B] text-sm leading-relaxed mt-4 line-clamp-3">{post.excerpt}</p>
+                  <Link
+                    to={`/blog/${post.slug}`}
+                    className="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider border-b border-[#D4A017] pb-1"
+                  >
+                    Read Guide <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+              </article>
             ))}
           </div>
         </div>
