@@ -135,7 +135,7 @@ export default function Home() {
               data-testid="hero-overline"
               className="section-label di-overline text-[#D4A017]"
             >
-              Delta Impex Inc. — One Stop Shop
+              Delta Impex Incorporation — One Stop Shop
             </span>
             <h1
               data-testid="hero-heading"
@@ -152,7 +152,7 @@ export default function Home() {
             >
               One stop shop for industrial machinery solutions.
               <br />
-              Delta Impex Inc. provides reliable CNC machines, plastic machines,
+              Delta Impex Incorporation provides reliable CNC machines, plastic machines,
               woodworking machines, laser machines, sanding machines, and
               circular saw machines for industrial and commercial needs.
             </p>
@@ -337,13 +337,14 @@ export default function Home() {
           </div>
           <div className="lg:col-span-6">
             <span className="section-label di-overline text-[#D4A017]">
-              About Delta Impex Inc.
+              About Delta Impex Incorporation
             </span>
             <h2 className="font-heading text-3xl md:text-5xl font-bold text-[#0B131E] tracking-tight mt-4 leading-tight">
               An industrial machinery company built for serious business.
             </h2>
             <p className="text-[#475569] text-base leading-relaxed mt-6">
-              Delta Impex Inc. is an industrial machinery company focused on
+              Delta Impex Incorporation is an industrial machinery company
+              focused on
               providing reliable machine solutions for businesses and
               industries. We deal in CNC machines, plastic machines,
               woodworking machines, laser machines, sanding machines, and

@@ -40,7 +40,6 @@ export default function ProductDetail() {
 
   if (!product) return <Navigate to="/products" replace />;
 
-  const isNew = product.condition === "New";
   const gallery = product.gallery;
   const productUrl = `${SITE.url}/products/${product.slug}`;
   const productSchema = {
@@ -105,13 +104,9 @@ export default function ProductDetail() {
                 }`}
               />
               <span
-                className={`absolute top-5 left-5 text-xs font-bold px-3 py-1.5 uppercase tracking-wider rounded-sm shadow-md ${
-                  isNew
-                    ? "bg-[#D4A017] text-[#0B131E]"
-                    : "bg-white text-[#0B131E]"
-                }`}
+                className="absolute top-5 left-5 text-xs font-bold px-3 py-1.5 uppercase tracking-wider rounded-sm shadow-md bg-white text-[#0B131E]"
               >
-                {product.condition}
+                Old / New
               </span>
             </div>
             <div className="mt-4 grid grid-cols-4 gap-3">

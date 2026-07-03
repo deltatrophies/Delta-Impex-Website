@@ -2,7 +2,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 
 export default function ProductCard({ product, idx = 0 }) {
-  const isNew = product.condition === "New";
   const navigate = useNavigate();
   const detailPath = `/products/${product.slug}`;
 
@@ -35,14 +34,10 @@ export default function ProductCard({ product, idx = 0 }) {
           className="machine-card-media-image relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-500 ease-out"
         />
         <span
-          className={`absolute z-20 top-4 left-4 text-xs font-bold px-3 py-1.5 uppercase tracking-wider rounded-sm shadow-md ${
-            isNew
-              ? "bg-[#D4A017] text-[#0B131E]"
-              : "bg-[#0B131E] text-white border border-[#D4A017]/40"
-          }`}
+          className="absolute z-20 top-4 left-4 text-xs font-bold px-3 py-1.5 uppercase tracking-wider rounded-sm shadow-md bg-[#0B131E] text-white border border-[#D4A017]/40"
           data-testid={`product-condition-${product.slug}`}
         >
-          {product.condition}
+          Old / New
         </span>
       </div>
 

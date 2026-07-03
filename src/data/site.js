@@ -21,7 +21,7 @@ export const ORGANIZATION_SCHEMA = {
   "@type": "Organization",
   "@id": `${SITE.url}/#organization`,
   name: SITE.name,
-  alternateName: ["Delta Impex", "Delta Impex Inc"],
+  alternateName: ["Delta Impex", "Delta Impex Inc", "Delta Impex Incorporation"],
   url: SITE.url,
   logo: absoluteUrl(SITE.logo),
   image: absoluteUrl(SITE.defaultImage),

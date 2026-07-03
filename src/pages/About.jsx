@@ -85,7 +85,7 @@ export default function About() {
             data-testid="about-hero-heading"
             className="font-heading text-4xl sm:text-5xl lg:text-7xl font-black text-white tracking-tight leading-[1.05] mt-6"
           >
-            About <span className="text-[#D4A017]">Delta Impex Inc.</span>
+            About <span className="text-[#D4A017]">Delta Impex Incorporation</span>
           </h1>
           <p className="text-lg md:text-xl text-white/75 max-w-3xl mt-6 leading-relaxed">
             Reliable Industrial Machinery Solutions for Businesses.
@@ -104,7 +104,7 @@ export default function About() {
               Who We Are
             </h2>
             <p className="text-[#475569] text-base leading-relaxed mt-6">
-              Delta Impex Inc. is a professional industrial machinery company
+              Delta Impex Incorporation is a professional industrial machinery company
               dealing in a wide range of machines for different industries. We
               showcase plastic processing machines, woodworking machines, and
               signage machines with subcategories like CNC, sanding, router,

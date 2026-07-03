@@ -1,4 +1,4 @@
-// Delta Impex Inc. - Product Catalog
+﻿// Delta Impex Inc. - Product Catalog
 // Image assets are stored locally under /public/images so the website does
 // not depend on third-party image URLs at runtime.
 
@@ -175,7 +175,7 @@ export const PRODUCTS = [
     category: "cnc-machines",
     parentCategory: "wood-working-machines",
     categoryName: "CNC Cutting Machine",
-    condition: "New",
+    condition: "Old / New",
     description:
       "A precision CNC cutting machine designed for accurate cutting, shaping, and repeatable production work.",
     features: [
@@ -194,7 +194,7 @@ export const PRODUCTS = [
     ],
     specs: {
       machine_type: "CNC Cutting Machine - Type 1",
-      condition: "New",
+      condition: "Old / New",
       power: "Contact for details",
       working_area: "Standard 4x8 ft",
       material_support: "Wood, Acrylic, MDF, Plastic",
@@ -282,7 +282,7 @@ export const PRODUCTS = [
     category: "plastic-moulding-machine-type-2",
     parentCategory: "plastic-processing-machines",
     categoryName: "Plastic Moulding Machine",
-    condition: "New",
+    condition: "Old / New",
     description:
       "Enclosed plastic moulding machine designed for controlled, efficient, and repeatable industrial manufacturing.",
     features: [
@@ -302,7 +302,7 @@ export const PRODUCTS = [
     ],
     specs: {
       machine_type: "Plastic Moulding Machine - Type 2",
-      condition: "New",
+      condition: "Old / New",
       power: "Contact for details",
       working_area: "Contact for details",
       material_support: "Thermoplastics",
@@ -334,10 +334,6 @@ export const PRODUCTS = [
     gallery: [
       "/images/machinery/wood-working-machines/router-machine/front-view.png",
       "/images/machinery/wood-working-machines/router-machine/side-view.png",
-      "/images/machinery/wood-working-machines/drill-machine/front-view.png",
-      "/images/machinery/wood-working-machines/drill-machine/side-view.png",
-      "/images/machinery/wood-working-machines/dual-drill-machine/front-view.png",
-      "/images/machinery/wood-working-machines/dual-drill-machine/side-view.png",
     ],
     specs: {
       machine_type: "Wood Router",
@@ -357,7 +353,7 @@ export const PRODUCTS = [
     category: "spm-machines",
     parentCategory: "wood-working-machines",
     categoryName: "SPM",
-    condition: "New",
+    condition: "Old / New",
     description:
       "Special purpose machine designed for focused, repeatable, and application-specific industrial production.",
     features: [
@@ -376,7 +372,7 @@ export const PRODUCTS = [
     ],
     specs: {
       machine_type: "SPM (Special Purpose Machine)",
-      condition: "New",
+      condition: "Old / New",
       power: "Contact for details",
       working_area: "Standard",
       material_support: "Contact for details",
@@ -392,7 +388,7 @@ export const PRODUCTS = [
     category: "drill-machines",
     parentCategory: "wood-working-machines",
     categoryName: "Drilling Machine",
-    condition: "New",
+    condition: "Old / New",
     description:
       "A dependable single-head drill machine for accurate and repeatable woodworking operations.",
     features: [
@@ -412,7 +408,7 @@ export const PRODUCTS = [
     ],
     specs: {
       machine_type: "Single Drill",
-      condition: "New",
+      condition: "Old / New",
       power: "Contact for details",
       working_area: "Standard",
       material_support: "Wood, MDF, Plywood",
@@ -428,7 +424,7 @@ export const PRODUCTS = [
     category: "drill-machines",
     parentCategory: "wood-working-machines",
     categoryName: "Drilling Machine",
-    condition: "New",
+    condition: "Old / New",
     description:
       "A dual-head drill machine built for faster, consistent, and repeatable woodworking production.",
     features: [
@@ -448,7 +444,7 @@ export const PRODUCTS = [
     ],
     specs: {
       machine_type: "Dual Drill",
-      condition: "New",
+      condition: "Old / New",
       power: "Contact for details",
       working_area: "Standard",
       material_support: "Wood, MDF, Plywood",
@@ -464,7 +460,7 @@ export const PRODUCTS = [
     category: "laser-machines",
     parentCategory: "signage-machines",
     categoryName: "Laser Machine",
-    condition: "New",
+    condition: "Old / New",
     description:
       "Advanced laser machine for cutting, engraving, and marking work with precision.",
     features: [
@@ -483,45 +479,11 @@ export const PRODUCTS = [
     ],
     specs: {
       machine_type: "Laser Cutter",
-      condition: "New",
+      condition: "Old / New",
       power: "Contact for details",
       working_area: "Custom",
       material_support: "Steel, Acrylic, Wood, Leather",
       usage: "Industrial",
-      automation_level: "Fully Automatic",
-      availability: "Available",
-      price: "Contact for Price",
-    },
-  },
-  {
-    slug: "laser-engraving-machine",
-    name: "Laser Engraving Machine",
-    category: "laser-machines",
-    parentCategory: "signage-machines",
-    categoryName: "Laser Machine",
-    condition: "Old / New",
-    description:
-      "Laser engraving machine designed for detailed engraving, marking, and creative production work.",
-    features: [
-      "Fine detailing",
-      "Clean marking output",
-      "Suitable for design and branding work",
-      "Professional finish",
-    ],
-    applications: "Branding, awards, custom gifts, industrial marking.",
-    image: "/images/machinery/laser-machines/laser-machine/lid-open.png",
-    imageFit: "contain",
-    gallery: [
-      "/images/machinery/laser-machines/laser-machine/lid-open.png",
-      "/images/machinery/laser-machines/laser-machine/lid-closed.png",
-    ],
-    specs: {
-      machine_type: "Laser Engraver",
-      condition: "Old / New",
-      power: "Contact for details",
-      working_area: "Standard",
-      material_support: "Wood, Metal, Acrylic, Leather",
-      usage: "Commercial / Industrial",
       automation_level: "Fully Automatic",
       availability: "Available",
       price: "Contact for Price",
@@ -610,3 +572,4 @@ export const productsByCategory = (slug) => {
     (p) => p.category === resolved || p.parentCategory === resolved
   );
 };
+

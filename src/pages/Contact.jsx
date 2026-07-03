@@ -61,15 +61,15 @@ export default function Contact() {
   return (
     <div data-testid="page-contact" className="bg-white">
       <SEO
-        title="Contact Delta Impex Inc. | Machinery Supplier Jalandhar"
-        description="Contact Delta Impex Inc. in Jalandhar, Punjab for CNC, plastic moulding, woodworking, laser, sanding and circular saw machine enquiries."
+        title="Contact Delta Impex Incorporation | Machinery Supplier Jalandhar"
+        description="Contact Delta Impex Incorporation in Jalandhar, Punjab for CNC, plastic moulding, woodworking, laser, sanding and circular saw machine enquiries."
         path="/contact"
         image="/images/pages/contact/hero-w2000.jpg"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "ContactPage",
           url: `${SITE.url}/contact`,
-          name: "Contact Delta Impex Inc.",
+          name: "Contact Delta Impex Incorporation",
           mainEntity: { "@id": `${SITE.url}/#organization` },
         }}
       />
@@ -78,7 +78,7 @@ export default function Contact() {
         <div className="absolute inset-0">
           <img
             src="/images/pages/contact/hero-w2000.jpg"
-            alt="Contact Delta Impex Inc."
+            alt="Contact Delta Impex Incorporation"
             className="w-full h-full object-cover opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B131E] via-[#0B131E]/85 to-[#0B131E]/40" />
@@ -91,7 +91,7 @@ export default function Contact() {
             data-testid="contact-hero-heading"
             className="font-heading text-4xl sm:text-5xl lg:text-7xl font-black text-white tracking-tight leading-[1.05] mt-6"
           >
-            Contact <span className="text-[#D4A017]">Delta Impex Inc.</span>
+            Contact <span className="text-[#D4A017]">Delta Impex Incorporation</span>
           </h1>
           <p className="text-lg text-white/75 max-w-2xl mt-6 leading-relaxed">
             Get in touch with us for machine enquiries, product details,
@@ -181,7 +181,7 @@ export default function Contact() {
           <div className="w-full h-[400px] overflow-hidden border border-[#E2E8F0] rounded-sm">
             <iframe
               src={CONTACT_DETAILS.googleMapsEmbedUrl}
-              title="Delta Impex Inc. location"
+              title="Delta Impex Incorporation location"
               data-testid="location-map"
               className="w-full h-full border-0"
               loading="lazy"
@@ -200,7 +200,7 @@ export default function Contact() {
           </h2>
           <p className="text-white/70 text-lg leading-relaxed mt-6 max-w-2xl mx-auto">
             Whether you need a new machine, old machine, or guidance about a
-            suitable machine category, Delta Impex Inc. is ready to help.
+            suitable machine category, Delta Impex Incorporation is ready to help.
           </p>
           <a
             href="#enquiry"

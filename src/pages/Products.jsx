@@ -16,8 +16,6 @@ import { SITE } from "../data/site";
 const ALL_FILTERS = [
   { id: "all", label: "Main Categories" },
   ...CATEGORIES.map((c) => ({ id: c.slug, label: c.name })),
-  { id: "old", label: "Old Machines" },
-  { id: "new", label: "New Machines" },
 ];
 
 function CategoryCard({ category, idx = 0 }) {
@@ -77,17 +75,13 @@ export default function Products() {
 
   const view = useMemo(() => {
     if (active === "all") return PRODUCTS;
-    if (active === "new")
-      return PRODUCTS.filter((p) => p.condition === "New");
-    if (active === "old")
-      return PRODUCTS.filter((p) => p.condition.includes("Old"));
     return productsByCategory(active);
   }, [active]);
 
   const activeCategory = findCategoryNode(active);
   const activeSubcategories = subcategoriesByParent(active);
   const showMainCategories = active === "all";
-  const showSubcategories = activeSubcategories.length > 0 && active !== "old" && active !== "new";
+  const showSubcategories = activeSubcategories.length > 0;
   const showProducts = !showMainCategories && !showSubcategories;
   const resultLabel = showMainCategories
     ? "main categories"

@@ -46,7 +46,7 @@ export default function Navbar() {
             <img
               src="/Logo/delta-impex-logo-transparent.png"
               alt="Delta Impex Inc."
-              className="h-11 w-auto object-contain"
+              className="h-12 w-auto object-contain"
             />
             <span className="font-heading text-xl sm:text-2xl font-black tracking-tight text-white leading-none">
               Delta <span className="text-[#D4A017]">Impex</span>

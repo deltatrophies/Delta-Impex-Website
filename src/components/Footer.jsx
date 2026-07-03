@@ -29,7 +29,7 @@ export default function Footer() {
             </span>
           </Link>
           <p className="mt-6 text-sm leading-relaxed">
-            Delta Impex Inc. deals in industrial machinery including plastic
+            Delta Impex Incorporation deals in industrial machinery including plastic
             processing machines, woodworking machines, signage machines, CNC,
             sanding, router, drill, SPM, laser, and circular saw machines.
           </p>
