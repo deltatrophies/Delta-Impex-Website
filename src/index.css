@@ -293,3 +293,32 @@ code {
     display: contents !important;
   }
 }
+
+.delta-map-marker {
+  background: transparent;
+  border: 0;
+}
+
+.delta-map-pin {
+  position: relative;
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: #dc2626;
+  border: 3px solid #fff;
+  border-radius: 50% 50% 50% 0;
+  box-shadow: 0 12px 22px rgba(15, 23, 42, 0.35);
+  transform: rotate(-45deg);
+}
+
+.delta-map-pin::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #fff;
+  transform: translate(-50%, -50%);
+}

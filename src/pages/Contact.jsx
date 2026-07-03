@@ -7,6 +7,7 @@ import { CONTACT_DETAILS, CONTACT_LABELS, hasContactValue } from "../data/contac
 import { Clock, MessageCircle } from "../components/icons/legacy";
 import SEO from "../components/SEO";
 import { SITE } from "../data/site";
+import LocationMap from "../components/LocationMap";
 
 const CONTACTS = [
   {
@@ -179,15 +180,7 @@ export default function Contact() {
             </h2>
           </div>
           <div className="w-full h-[400px] overflow-hidden border border-[#E2E8F0] rounded-sm">
-            <iframe
-              src={CONTACT_DETAILS.googleMapsEmbedUrl}
-              title="Delta Impex Incorporation location"
-              data-testid="location-map"
-              className="w-full h-full border-0"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
+            <LocationMap />
           </div>
         </div>
       </section>
