@@ -6,8 +6,9 @@ export const SITE = {
   language: "en-IN",
   defaultTitle: "Delta Impex Inc. | Industrial Machinery Supplier in Jalandhar",
   defaultDescription:
-    "Delta Impex Inc. supplies new and used CNC, plastic moulding, woodworking, laser, sanding and sawing machines from Jalandhar, Punjab, India.",
+    "Delta Impex Inc. supplies new and used CNC, plastic moulding, woodworking, laser, sanding and circular saw machines from Jalandhar, Punjab, India.",
   defaultImage: "/images/pages/home/hero-industrial-machinery-w2000.jpg",
+  logo: "/Logo/delta-impex-logo-transparent.png",
 };
 
 export const absoluteUrl = (path = "/") => {
@@ -22,6 +23,7 @@ export const ORGANIZATION_SCHEMA = {
   name: SITE.name,
   alternateName: ["Delta Impex", "Delta Impex Inc"],
   url: SITE.url,
+  logo: absoluteUrl(SITE.logo),
   image: absoluteUrl(SITE.defaultImage),
   description: SITE.defaultDescription,
   foundingLocation: {

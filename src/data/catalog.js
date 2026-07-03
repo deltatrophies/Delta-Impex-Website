@@ -4,20 +4,11 @@
 
 export const CATEGORIES = [
   {
-    slug: "cnc-machines",
-    name: "CNC Machines",
-    short: "Precision",
-    description:
-      "Precision machines designed for cutting, shaping, engraving, and automated manufacturing work.",
-    image: "/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
-    imageFit: "contain",
-  },
-  {
-    slug: "plastic-machines",
-    name: "Plastic Machines",
+    slug: "plastic-processing-machines",
+    name: "Plastic Processing Machine",
     short: "Production",
     description:
-      "Industrial plastic moulding machines designed for consistent, accurate, and efficient production.",
+      "Industrial plastic processing machines designed for consistent, accurate, and efficient production.",
     image:
       "/images/machinery/plastic-machines/plastic-moulding-machine-type-1/front-view.png",
     imageFit: "contain",
@@ -27,119 +18,162 @@ export const CATEGORIES = [
     name: "Wood Working Machines",
     short: "Craftsmanship",
     description:
-      "Reliable machines for cutting, shaping, finishing, and processing wood materials.",
+      "CNC, sanding, circular saw, SPM, router, and drill machines for woodworking production.",
     image: "/images/machinery/wood-working-machines/router-machine/front-view.png",
     imageFit: "contain",
   },
   {
-    slug: "laser-machines",
-    name: "Laser Machines",
-    short: "Precision Light",
+    slug: "signage-machines",
+    name: "Signage Machine",
+    short: "Laser Signage",
     description:
-      "Advanced machines for laser cutting, engraving, marking, and precision design work.",
+      "Laser machines for cutting, engraving, marking, and signage production work.",
     image: "/images/machinery/laser-machines/laser-machine/lid-closed.png",
-    imageFit: "contain",
-  },
-  {
-    slug: "sanding-machines",
-    name: "Sanding Machines",
-    short: "Finishing",
-    description:
-      "Machines used for smooth finishing, surface preparation, and polishing applications.",
-    image: "/images/machinery/sanding-machines/sanding-machine/front-view.png",
-    imageFit: "contain",
-  },
-  {
-    slug: "sawing-machines",
-    name: "Sawing Machines",
-    short: "Cutting",
-    description:
-      "Strong and efficient machines for accurate cutting of wood, metal, plastic, and other materials.",
-    image: "/images/machinery/sawing-machines/saw-machine/front-view.png",
     imageFit: "contain",
   },
 ];
 
-export const PLASTIC_CATEGORIES = [
+export const SUBCATEGORIES = [
   {
     slug: "plastic-moulding-machine-type-1",
+    parentSlug: "plastic-processing-machines",
     name: "Plastic Moulding Machine - Type 1",
     short: "Moulding System 01",
     description:
       "Industrial plastic moulding machine with a robust hydraulic configuration for consistent production.",
     image:
       "/images/machinery/plastic-machines/plastic-moulding-machine-type-1/front-view.png",
-    href: "/products/plastic-moulding-machine-type-1",
+    imageFit: "contain",
   },
   {
     slug: "plastic-moulding-machine-type-2",
+    parentSlug: "plastic-processing-machines",
     name: "Plastic Moulding Machine - Type 2",
     short: "Moulding System 02",
     description:
       "Enclosed plastic moulding machine built for controlled, reliable, and repeatable manufacturing.",
     image:
       "/images/machinery/plastic-machines/plastic-moulding-machine-type-2/front-view.png",
-    href: "/products/plastic-moulding-machine-type-2",
+    imageFit: "contain",
   },
-];
-
-export const WOODWORKING_CATEGORIES = [
   {
-    slug: "drill-machines",
-    name: "Drilling Machines",
-    short: "Single & Dual Drill",
+    slug: "cnc-machines",
+    parentSlug: "wood-working-machines",
+    name: "CNC Machines",
+    short: "Precision CNC",
     description:
-      "Accurate single and dual-head drilling machines for repeatable woodworking operations.",
-    image:
-      "/images/machinery/wood-working-machines/dual-drill-machine/front-view.png",
-    href: "/products/single-drill-machine",
+      "CNC machines for accurate cutting, shaping, engraving, and repeatable woodworking production.",
+    image: "/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
+    imageFit: "contain",
   },
   {
-    slug: "wood-turning-lathes",
-    name: "Wood-Turning Lathes",
-    short: "Turning & Shaping",
-    description:
-      "Precision lathe machines for turning, shaping, and finishing wooden components.",
-    image:
-      "/images/machinery/wood-working-machines/wood-turning-lathe/front-view.png",
-    href: "/products/wood-cutting-machine",
-  },
-  {
-    slug: "wood-sanding-machines",
+    slug: "sanding-machines",
+    parentSlug: "wood-working-machines",
     name: "Sanding Machines",
     short: "Surface Finishing",
     description:
       "Reliable sanding solutions for smooth, consistent, and production-ready surfaces.",
-    image:
-      "/images/machinery/sanding-machines/sanding-machine/front-view.png",
-    href: "/products?category=sanding-machines",
+    image: "/images/machinery/sanding-machines/sanding-machine/front-view.png",
+    imageFit: "contain",
   },
   {
-    slug: "wood-saw-machines",
-    name: "Saw Machines",
+    slug: "sawing-machines",
+    parentSlug: "wood-working-machines",
+    name: "Circular Saw Machines",
     short: "Precision Cutting",
     description:
-      "Strong and accurate saw machines for clean, efficient woodworking cuts.",
+      "Strong and accurate circular saw machines for clean, efficient woodworking cuts.",
     image: "/images/machinery/sawing-machines/saw-machine/front-view.png",
-    href: "/products?category=sawing-machines",
+    imageFit: "contain",
+  },
+  {
+    slug: "spm-machines",
+    parentSlug: "wood-working-machines",
+    name: "SPM (Special Purpose Machine)",
+    short: "Custom Purpose",
+    description:
+      "Special purpose machines designed for focused, repeatable, and application-specific production work.",
+    image:
+      "/images/machinery/wood-working-machines/wood-turning-lathe/front-view.png",
+    imageFit: "contain",
   },
   {
     slug: "wood-router-machines",
-    name: "Wood Router Machines",
+    parentSlug: "wood-working-machines",
+    name: "Router Machines",
     short: "Routing & Profiling",
     description:
       "Versatile router machines for grooving, profiling, shaping, and edge work.",
     image:
       "/images/machinery/wood-working-machines/router-machine/front-view.png",
-    href: "/products/wood-working-machine",
+    imageFit: "contain",
+  },
+  {
+    slug: "drill-machines",
+    parentSlug: "wood-working-machines",
+    name: "Drill Machines",
+    short: "Single & Dual Drill",
+    description:
+      "Accurate single and dual-head drilling machines for repeatable woodworking operations.",
+    image:
+      "/images/machinery/wood-working-machines/dual-drill-machine/front-view.png",
+    imageFit: "contain",
+  },
+  {
+    slug: "laser-machines",
+    parentSlug: "signage-machines",
+    name: "Laser Machines",
+    short: "Precision Light",
+    description:
+      "Advanced machines for laser cutting, engraving, marking, and precision signage design work.",
+    image: "/images/machinery/laser-machines/laser-machine/lid-closed.png",
+    imageFit: "contain",
   },
 ];
+
+export const LEGACY_CATEGORY_ALIASES = {
+  "plastic-machines": "plastic-processing-machines",
+  "wood-turning-lathes": "spm-machines",
+  "wood-saw-machines": "sawing-machines",
+  "wood-sanding-machines": "sanding-machines",
+};
+
+export const CATEGORY_TREE = CATEGORIES.map((category) => ({
+  ...category,
+  subcategories: SUBCATEGORIES.filter((sub) => sub.parentSlug === category.slug),
+}));
+
+export const findSubcategory = (slug) =>
+  SUBCATEGORIES.find((c) => c.slug === slug);
+
+export const subcategoriesByParent = (slug) =>
+  SUBCATEGORIES.filter((c) => c.parentSlug === slug);
+
+export const findCategoryNode = (slug) =>
+  CATEGORIES.find((c) => c.slug === slug) || findSubcategory(slug);
+
+export const resolveCategorySlug = (slug) => LEGACY_CATEGORY_ALIASES[slug] || slug;
+
+export const PLASTIC_CATEGORIES = SUBCATEGORIES.filter(
+  (c) => c.parentSlug === "plastic-processing-machines"
+).map((c) => ({
+  ...c,
+  href: `/products?category=${c.slug}`,
+}));
+
+export const WOODWORKING_CATEGORIES = SUBCATEGORIES.filter(
+  (c) => c.parentSlug === "wood-working-machines"
+).map((c) => ({
+  ...c,
+  href: `/products?category=${c.slug}`,
+}));
 
 export const PRODUCTS = [
   {
     slug: "cnc-cutting-machine-type-1",
     name: "CNC Cutting Machine - Type 1",
     category: "cnc-machines",
+    parentCategory: "wood-working-machines",
     categoryName: "CNC Cutting Machine",
     condition: "New",
     description:
@@ -174,6 +208,7 @@ export const PRODUCTS = [
     slug: "cnc-cutting-machine-type-2",
     name: "CNC Cutting Machine - Type 2",
     category: "cnc-machines",
+    parentCategory: "wood-working-machines",
     categoryName: "CNC Cutting Machine",
     condition: "Old / New",
     description:
@@ -208,7 +243,7 @@ export const PRODUCTS = [
     slug: "plastic-moulding-machine-type-1",
     name: "Plastic Moulding Machine - Type 1",
     category: "plastic-moulding-machine-type-1",
-    parentCategory: "plastic-machines",
+    parentCategory: "plastic-processing-machines",
     categoryName: "Plastic Moulding Machine",
     condition: "Old / New",
     description:
@@ -245,7 +280,7 @@ export const PRODUCTS = [
     slug: "plastic-moulding-machine-type-2",
     name: "Plastic Moulding Machine - Type 2",
     category: "plastic-moulding-machine-type-2",
-    parentCategory: "plastic-machines",
+    parentCategory: "plastic-processing-machines",
     categoryName: "Plastic Moulding Machine",
     condition: "New",
     description:
@@ -280,8 +315,9 @@ export const PRODUCTS = [
   {
     slug: "wood-working-machine",
     name: "Wood Router Machine",
-    category: "wood-working-machines",
-    categoryName: "Wood Working Machine",
+    category: "wood-router-machines",
+    parentCategory: "wood-working-machines",
+    categoryName: "Router Machine",
     condition: "Old / New",
     description:
       "A reliable wood router machine for grooving, profiling, edge shaping, and material preparation.",
@@ -317,20 +353,21 @@ export const PRODUCTS = [
   },
   {
     slug: "wood-cutting-machine",
-    name: "Wood Turning Lathe Machine",
-    category: "wood-working-machines",
-    categoryName: "Wood Working Machine",
+    name: "SPM (Special Purpose Machine)",
+    category: "spm-machines",
+    parentCategory: "wood-working-machines",
+    categoryName: "SPM",
     condition: "New",
     description:
-      "Wood-turning lathe designed for accurate shaping, turning, and finishing of wooden components.",
+      "Special purpose machine designed for focused, repeatable, and application-specific industrial production.",
     features: [
-      "Accurate and balanced wood turning",
-      "Smooth shaping and finishing",
+      "Application-specific machine setup",
+      "Repeatable production performance",
       "Durable industrial build",
-      "Suitable for repeatable production work",
+      "Suitable for focused workshop and industrial operations",
     ],
     applications:
-      "Furniture parts, decorative columns, wooden handles, craft products, and joinery workshops.",
+      "Custom production tasks, workshop operations, component processing, and industrial manufacturing support.",
     image: "/images/machinery/wood-working-machines/wood-turning-lathe/front-view.png",
     imageFit: "contain",
     gallery: [
@@ -338,11 +375,11 @@ export const PRODUCTS = [
       "/images/machinery/wood-working-machines/wood-turning-lathe/side-view.png",
     ],
     specs: {
-      machine_type: "Wood Turning Lathe",
+      machine_type: "SPM (Special Purpose Machine)",
       condition: "New",
       power: "Contact for details",
       working_area: "Standard",
-      material_support: "Hardwood, Softwood",
+      material_support: "Contact for details",
       usage: "Commercial",
       automation_level: "Manual / Semi-Auto",
       availability: "Available",
@@ -425,6 +462,7 @@ export const PRODUCTS = [
     slug: "laser-cutting-machine",
     name: "Laser Cutting Machine",
     category: "laser-machines",
+    parentCategory: "signage-machines",
     categoryName: "Laser Machine",
     condition: "New",
     description:
@@ -459,6 +497,7 @@ export const PRODUCTS = [
     slug: "laser-engraving-machine",
     name: "Laser Engraving Machine",
     category: "laser-machines",
+    parentCategory: "signage-machines",
     categoryName: "Laser Machine",
     condition: "Old / New",
     description:
@@ -525,20 +564,20 @@ export const PRODUCTS = [
   },
   {
     slug: "sawing-machine",
-    name: "Sawing Machine",
+    name: "Circular Saw Machine",
     category: "sawing-machines",
     parentCategory: "wood-working-machines",
-    categoryName: "Sawing Machine",
+    categoryName: "Circular Saw Machine",
     condition: "Old / New",
     description:
-      "Strong cutting machine designed for accurate and efficient sawing applications.",
+      "Strong circular saw machine designed for accurate and efficient cutting applications.",
     features: [
       "Clean cutting output",
       "Durable frame",
       "Suitable for workshop and industrial use",
       "Reliable performance",
     ],
-    applications: "General workshops, metal cutting, lumber yards, fabrication.",
+    applications: "General workshops, circular cutting operations, lumber yards, fabrication, and production work.",
     image: "/images/machinery/sawing-machines/saw-machine/front-view.png",
     imageFit: "contain",
     gallery: [
@@ -546,7 +585,7 @@ export const PRODUCTS = [
       "/images/machinery/sawing-machines/saw-machine/side-view.png",
     ],
     specs: {
-      machine_type: "Sawing",
+      machine_type: "Circular Saw",
       condition: "Old / New",
       power: "Contact for details",
       working_area: "Standard",
@@ -563,9 +602,11 @@ export const findProduct = (slug) =>
   PRODUCTS.find((p) => p.slug === slug);
 
 export const findCategory = (slug) =>
-  CATEGORIES.find((c) => c.slug === slug);
+  findCategoryNode(resolveCategorySlug(slug));
 
-export const productsByCategory = (slug) =>
-  PRODUCTS.filter(
-    (p) => p.category === slug || p.parentCategory === slug
+export const productsByCategory = (slug) => {
+  const resolved = resolveCategorySlug(slug);
+  return PRODUCTS.filter(
+    (p) => p.category === resolved || p.parentCategory === resolved
   );
+};

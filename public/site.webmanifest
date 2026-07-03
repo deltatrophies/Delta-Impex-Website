@@ -4,6 +4,14 @@
   "description": "Industrial machinery supplier in Jalandhar, Punjab, India.",
   "start_url": "/",
   "display": "standalone",
+  "icons": [
+    {
+      "src": "/Logo/delta-impex-logo-transparent.png",
+      "sizes": "927x576",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
   "background_color": "#ffffff",
   "theme_color": "#0b131e",
   "lang": "en-IN"

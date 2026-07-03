@@ -62,7 +62,7 @@ export default function Contact() {
     <div data-testid="page-contact" className="bg-white">
       <SEO
         title="Contact Delta Impex Inc. | Machinery Supplier Jalandhar"
-        description="Contact Delta Impex Inc. in Jalandhar, Punjab for CNC, plastic moulding, woodworking, laser, sanding and sawing machine enquiries."
+        description="Contact Delta Impex Inc. in Jalandhar, Punjab for CNC, plastic moulding, woodworking, laser, sanding and circular saw machine enquiries."
         path="/contact"
         image="/images/pages/contact/hero-w2000.jpg"
         structuredData={{

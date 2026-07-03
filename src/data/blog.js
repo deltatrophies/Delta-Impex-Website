@@ -221,7 +221,7 @@ export const BLOG_POSTS = [
     slug: "essential-woodworking-machines-for-workshop",
     title: "Essential Woodworking Machines for a Production Workshop",
     excerpt:
-      "Learn how routers, drilling machines, wood-turning lathes, saws and sanding machines fit into a practical woodworking production flow.",
+      "Learn how routers, drilling machines, SPM machines, circular saws and sanding machines fit into a practical woodworking production flow.",
     category: "Woodworking",
     published: "2026-06-04",
     updated: "2026-06-04",
@@ -239,9 +239,9 @@ export const BLOG_POSTS = [
     ],
     sections: [
       {
-        heading: "Sawing machines for material preparation",
+        heading: "Circular saw machines for material preparation",
         paragraphs: [
-          "Sawing is often the first production stage. The suitable saw depends on whether you process panels, solid timber or mixed workshop materials. Prioritise stable support, appropriate guarding, clean adjustment and the capacity needed for your common stock size.",
+          "Circular saw cutting is often an important production stage. The suitable machine depends on whether you process panels, solid timber or mixed workshop materials. Prioritise stable support, appropriate guarding, clean adjustment and the capacity needed for your common stock size.",
         ],
       },
       {
@@ -264,9 +264,9 @@ export const BLOG_POSTS = [
         ],
       },
       {
-        heading: "Wood-turning lathes for cylindrical components",
+        heading: "SPM machines for special-purpose production",
         paragraphs: [
-          "Turning lathes are used for components such as furniture legs, handles, decorative profiles and columns. Review maximum turning length and diameter, speed range, work holding, tool support and the finish expected from the turning stage.",
+          "SPM machines are designed around a focused operation or production requirement. Review the application, material, output target, fixture needs, operator workflow and support requirements before selecting a special purpose machine.",
         ],
       },
       {
@@ -284,7 +284,7 @@ export const BLOG_POSTS = [
       },
     ],
     conclusion:
-      "A practical woodworking setup connects each machine to a defined production step. Delta Impex Inc. supplies router, drilling, turning, sanding and sawing options and can help workshops compare equipment according to material, component size and output goals.",
+      "A practical woodworking setup connects each machine to a defined production step. Delta Impex Inc. supplies router, drilling, SPM, sanding and circular saw options and can help workshops compare equipment according to material, component size and output goals.",
     relatedProducts: [
       "wood-working-machine",
       "single-drill-machine",

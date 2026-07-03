@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { X, Factory } from "lucide-react";
+import { X } from "lucide-react";
 import { Menu } from "./icons/legacy";
 
 const links = [
@@ -43,11 +43,14 @@ export default function Navbar() {
             data-testid="navbar-logo"
             className="flex items-center gap-3 group"
           >
-            <span className="w-10 h-10 grid place-items-center bg-[#D4A017] text-[#0B131E] rounded-sm">
-              <Factory className="w-5 h-5" strokeWidth={2.5} />
-            </span>
-            <span className="font-heading font-black tracking-tight text-white text-2xl">
-              Delta<span className="text-[#D4A017]">Impex</span> Inc.
+            <img
+              src="/Logo/delta-impex-logo-transparent.png"
+              alt="Delta Impex Inc."
+              className="h-11 w-auto object-contain"
+            />
+            <span className="font-heading text-xl sm:text-2xl font-black tracking-tight text-white leading-none">
+              Delta <span className="text-[#D4A017]">Impex</span>
+              <span className="ml-1 text-white/85">Inc.</span>
             </span>
           </Link>
 

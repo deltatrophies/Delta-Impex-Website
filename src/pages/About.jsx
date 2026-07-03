@@ -36,14 +36,16 @@ const VALUES = [
 ];
 
 const RANGE = [
-  "CNC Machines",
-  "Plastic Machines",
+  "Plastic Processing Machine",
   "Wood Working Machines",
-  "Laser Machines",
+  "Signage Machine",
+  "CNC Machines",
   "Sanding Machines",
-  "Sawing Machines",
-  "Old Machines",
-  "New Machines",
+  "Router Machines",
+  "Drill Machines",
+  "SPM Machines",
+  "Circular Saw Machines",
+  "Laser Machines",
 ];
 
 export default function About() {
@@ -60,7 +62,7 @@ export default function About() {
     <div data-testid="page-about">
       <SEO
         title="About Delta Impex Inc. | Industrial Machinery Company"
-        description="Learn about Delta Impex Inc., a Jalandhar-based supplier of new and used CNC, plastic, woodworking, laser, sanding and sawing machines."
+        description="Learn about Delta Impex Inc., a Jalandhar-based supplier of new and used CNC, plastic, woodworking, laser, sanding and circular saw machines."
         path="/about"
         image="/images/pages/about/hero-w2000.jpg"
         structuredData={aboutSchema}
@@ -104,8 +106,9 @@ export default function About() {
             <p className="text-[#475569] text-base leading-relaxed mt-6">
               Delta Impex Inc. is a professional industrial machinery company
               dealing in a wide range of machines for different industries. We
-              showcase CNC machines, plastic machines, woodworking machines,
-              laser machines, sanding machines, and sawing machines. Our focus
+              showcase plastic processing machines, woodworking machines, and
+              signage machines with subcategories like CNC, sanding, router,
+              drill, SPM, circular saw, and laser machines. Our focus
               is to provide customers with reliable machinery options that
               support production, manufacturing, cutting, finishing, and
               processing requirements.
@@ -113,7 +116,7 @@ export default function About() {
           </div>
           <div className="lg:col-span-6">
             <img
-              src="/images/pages/about/workshop-w1400.jpg"
+              src="/images/pages/about/workshop-w1400.png"
               alt="Company"
               className="w-full h-[460px] object-cover rounded-sm"
             />
@@ -133,10 +136,10 @@ export default function About() {
           <p className="text-[#475569] text-base md:text-lg leading-relaxed mt-6 text-left">
             We help businesses explore and enquire about different types of
             industrial machines. Whether the customer needs a CNC machine for
-            precision work, a plastic machine for processing, a woodworking
-            machine for furniture or material work, a laser machine for
-            cutting and engraving, a sanding machine for finishing, or a
-            sawing machine for cutting, Delta Impex Inc. provides a clean and
+            precision work, a plastic processing machine for production, a
+            woodworking machine for furniture or material work, a signage laser
+            machine for cutting and engraving, a sanding machine for finishing,
+            or a circular saw machine for cutting, Delta Impex Inc. provides a clean and
             organized platform to showcase available machinery.
           </p>
         </div>

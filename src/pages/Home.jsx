@@ -27,7 +27,7 @@ const FEATURES = [
   {
     icon: Layers,
     title: "Wide Range of Machines",
-    text: "Delta Impex Inc. offers multiple types of machines including CNC, plastic, woodworking, laser, sanding, and sawing machines.",
+    text: "Delta Impex Inc. offers multiple types of machines including CNC, plastic, woodworking, laser, sanding, and circular saw machines.",
   },
   {
     icon: Wrench,
@@ -94,9 +94,9 @@ const GALLERY = [
   },
   {
     src: "/images/machinery/sawing-machines/saw-machine/front-view.png",
-    alt: "Saw machine front view",
-    category: "Saw Machines",
-    title: "Sawing Machine",
+    alt: "Circular saw machine front view",
+    category: "Circular Saw Machines",
+    title: "Circular Saw Machine",
     position: "center 52%",
   },
 ];
@@ -108,7 +108,7 @@ export default function Home() {
     <div data-testid="page-home">
       <SEO
         title="Delta Impex Inc. | Industrial Machinery Supplier in Jalandhar"
-        description="Delta Impex Inc. supplies new and used CNC, plastic moulding, woodworking, laser, sanding and sawing machines from Jalandhar, Punjab."
+        description="Delta Impex Inc. supplies new and used CNC, plastic moulding, woodworking, laser, sanding and circular saw machines from Jalandhar, Punjab."
         path="/"
         structuredData={[ORGANIZATION_SCHEMA, WEBSITE_SCHEMA]}
       />
@@ -135,7 +135,7 @@ export default function Home() {
               data-testid="hero-overline"
               className="section-label di-overline text-[#D4A017]"
             >
-              Delta Impex Inc. — Since Day One
+              Delta Impex Inc. — One Stop Shop
             </span>
             <h1
               data-testid="hero-heading"
@@ -150,9 +150,11 @@ export default function Home() {
               data-testid="hero-subheading"
               className="mt-8 text-lg text-white/75 max-w-2xl leading-relaxed"
             >
+              One stop shop for industrial machinery solutions.
+              <br />
               Delta Impex Inc. provides reliable CNC machines, plastic machines,
               woodworking machines, laser machines, sanding machines, and
-              sawing machines for industrial and commercial needs.
+              circular saw machines for industrial and commercial needs.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
@@ -345,7 +347,7 @@ export default function Home() {
               providing reliable machine solutions for businesses and
               industries. We deal in CNC machines, plastic machines,
               woodworking machines, laser machines, sanding machines, and
-              sawing machines. Our aim is to help customers find suitable
+              circular saw machines. Our aim is to help customers find suitable
               machines that improve productivity, accuracy, and business
               operations.
             </p>

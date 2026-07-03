@@ -1,13 +1,28 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 
 export default function ProductCard({ product, idx = 0 }) {
   const isNew = product.condition === "New";
+  const navigate = useNavigate();
+  const detailPath = `/products/${product.slug}`;
+
+  const openDetails = () => navigate(detailPath);
+
+  const openDetailsFromKeyboard = (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openDetails();
+    }
+  };
 
   return (
     <article
       data-testid={`product-card-${product.slug}`}
-      className="group bg-white border border-[#E2E8F0] rounded-sm overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
+      role="link"
+      tabIndex={0}
+      onClick={openDetails}
+      onKeyDown={openDetailsFromKeyboard}
+      className="group bg-white border border-[#E2E8F0] rounded-sm overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#D4A017] focus:ring-offset-2"
     >
       <div
         style={{ "--machine-card-image": `url("${product.image}")` }}
@@ -43,8 +58,9 @@ export default function ProductCard({ product, idx = 0 }) {
         </p>
         <div className="mt-auto pt-4 flex gap-3">
           <Link
-            to={`/products/${product.slug}`}
+            to={detailPath}
             data-testid={`view-details-${product.slug}`}
+            onClick={(event) => event.stopPropagation()}
             className="flex-1 border border-[#0B131E] text-[#0B131E] hover:bg-[#0B131E] hover:text-[#D4A017] py-2.5 text-xs font-bold uppercase tracking-wider text-center rounded-sm transition-colors"
           >
             View Details
@@ -52,6 +68,7 @@ export default function ProductCard({ product, idx = 0 }) {
           <Link
             to={`/contact?product=${product.slug}#enquiry`}
             data-testid={`enquire-${product.slug}`}
+            onClick={(event) => event.stopPropagation()}
             className="flex-1 bg-[#D4A017] text-[#0B131E] hover:bg-[#B58812] py-2.5 text-xs font-bold uppercase tracking-wider text-center rounded-sm transition-colors inline-flex items-center justify-center gap-1"
           >
             Enquire <ArrowUpRight className="w-3.5 h-3.5" />

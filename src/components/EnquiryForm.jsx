@@ -12,11 +12,13 @@ import {
 
 const MACHINE_OPTIONS = [
   "CNC Machine",
-  "Plastic Machine",
+  "Plastic Processing Machine",
   "Wood Working Machine",
+  "Signage Machine",
   "Laser Machine",
   "Sanding Machine",
-  "Sawing Machine",
+  "Circular Saw Machine",
+  "SPM (Special Purpose Machine)",
   "Old Machine",
   "New Machine",
   "Other",
