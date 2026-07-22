@@ -5,6 +5,24 @@
   "outputDirectory": "dist",
   "headers": [
     {
+      "source": "/deltaindustriesqr",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/deltaindustriesqr/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
       "source": "/assets/(.*)",
       "headers": [
         {
@@ -36,6 +54,14 @@
     {
       "source": "/api/:path*",
       "destination": "/api/:path*"
+    },
+    {
+      "source": "/deltaindustriesqr",
+      "destination": "/deltaindustriesqr/index.html"
+    },
+    {
+      "source": "/deltaindustriesqr/",
+      "destination": "/deltaindustriesqr/index.html"
     },
     {
       "source": "/(.*)",
