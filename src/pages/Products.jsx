@@ -94,16 +94,17 @@ export default function Products() {
   return (
     <div data-testid="page-products">
       <SEO
-        title="Industrial Machines for Sale | Delta Impex Inc."
-        description="Explore new and used CNC cutting, plastic moulding, woodworking, drilling, laser, sanding and circular saw machines available from Delta Impex Inc."
+        title="Industrial Machines for Sale in Jalandhar | Delta Impex Inc."
+        description="Explore new and used industrial machines for sale in Jalandhar from Delta Impex Inc., including CNC, plastic moulding, woodworking, drilling, laser, sanding and circular saw machines."
         path="/products"
-        image="/images/pages/products/hero-w2000.jpg"
+        image="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933066/delta-impex/images/pages/products/hero-w2000.jpg"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
           url: `${SITE.url}/products`,
-          name: "Industrial Machines for Sale",
-          description: "New and used industrial machinery supplied by Delta Impex Inc.",
+          name: "Industrial Machines for Sale in Jalandhar",
+          description:
+            "New and used industrial machinery supplied by Delta Impex Inc., a machine seller and supplier in Jalandhar, Punjab.",
           mainEntity: {
             "@type": "ItemList",
             itemListElement: PRODUCTS.map((product, index) => ({
@@ -119,7 +120,7 @@ export default function Products() {
       <section className="relative min-h-[60vh] flex items-center bg-[#0B131E] overflow-hidden pt-20">
         <div className="absolute inset-0">
           <img
-            src="/images/pages/products/hero-w2000.jpg"
+            src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933066/delta-impex/images/pages/products/hero-w2000.jpg"
             alt="Industrial products"
             className="w-full h-full object-cover opacity-45"
           />
@@ -136,9 +137,9 @@ export default function Products() {
             Our <span className="text-[#D4A017]">Machines</span>
           </h1>
           <p className="text-lg text-white/75 max-w-2xl mt-6 leading-relaxed">
-            Explore three main categories: Plastic Processing Machine, Wood
-            Working Machine, and Signage Machine — with focused subcategories
-            and detailed machine pages.
+            Explore industrial machines for sale in Jalandhar across three main
+            categories: Plastic Processing Machine, Wood Working Machine, and
+            Signage Machine — with focused subcategories and detailed machine pages.
           </p>
         </div>
       </section>

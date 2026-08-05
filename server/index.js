@@ -13,6 +13,8 @@ const port = Number(process.env.PORT || 8787);
 const googleSheetsWebhookUrl = process.env.GOOGLE_SHEETS_WEBHOOK_URL;
 
 const app = express();
+const cleanPhone = (value) => value.trim().replace(/[^\d]/g, "").slice(0, 15);
+const isValidPhone = (value) => /^\d{10,15}$/.test(value);
 
 app.disable("x-powered-by");
 app.use(helmet({ contentSecurityPolicy: false }));
@@ -58,9 +60,16 @@ app.post("/api/enquiries", async (request, response, next) => {
       });
     }
 
+    const phone = cleanPhone(input.phone);
+    if (!isValidPhone(phone)) {
+      return response.status(422).json({
+        detail: [{ loc: ["body", "phone"], msg: "Enter a valid phone number with 10 to 15 digits" }],
+      });
+    }
+
     const enquiry = {
       full_name: input.full_name.trim().slice(0, 160),
-      phone: input.phone.trim().slice(0, 60),
+      phone,
       email: input.email.trim().toLowerCase().slice(0, 254),
       company:
         typeof input.company === "string" ? input.company.trim().slice(0, 200) : "",

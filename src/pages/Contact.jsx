@@ -62,10 +62,10 @@ export default function Contact() {
   return (
     <div data-testid="page-contact" className="bg-white">
       <SEO
-        title="Contact Delta Impex Incorporation | Machinery Supplier Jalandhar"
-        description="Contact Delta Impex Incorporation in Jalandhar, Punjab for CNC, plastic moulding, woodworking, laser, sanding and circular saw machine enquiries."
+        title="Contact Machine Supplier in Jalandhar | Delta Impex Incorporation"
+        description="Contact Delta Impex Incorporation, a machine manufacturer, seller and supplier in Jalandhar, Punjab for CNC, plastic moulding, woodworking, laser, sanding and circular saw machine enquiries."
         path="/contact"
-        image="/images/pages/contact/hero-w2000.jpg"
+        image="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933062/delta-impex/images/pages/contact/hero-w2000.jpg"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "ContactPage",
@@ -78,7 +78,7 @@ export default function Contact() {
       <section className="relative min-h-[60vh] flex items-center bg-[#0B131E] overflow-hidden pt-20">
         <div className="absolute inset-0">
           <img
-            src="/images/pages/contact/hero-w2000.jpg"
+            src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933062/delta-impex/images/pages/contact/hero-w2000.jpg"
             alt="Contact Delta Impex Incorporation"
             className="w-full h-full object-cover opacity-40"
           />
@@ -95,8 +95,9 @@ export default function Contact() {
             Contact <span className="text-[#D4A017]">Delta Impex Incorporation</span>
           </h1>
           <p className="text-lg text-white/75 max-w-2xl mt-6 leading-relaxed">
-            Get in touch with us for machine enquiries, product details,
-            availability, and business requirements.
+            Get in touch with a Jalandhar-based industrial machine seller and
+            supplier for machine enquiries, product details, availability, and
+            business requirements.
           </p>
         </div>
       </section>

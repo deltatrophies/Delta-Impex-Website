@@ -49,6 +49,7 @@ export default function BlogDetail() {
         description={post.excerpt}
         path={`/blog/${post.slug}`}
         image={post.image}
+        keywords={post.keywords}
         type="article"
         structuredData={[articleSchema, breadcrumbSchema]}
       />

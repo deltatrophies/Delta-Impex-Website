@@ -32,6 +32,7 @@ export default function SEO({
   description = SITE.defaultDescription,
   path = "/",
   image = SITE.defaultImage,
+  keywords = SITE.keywords,
   type = "website",
   noindex = false,
   structuredData = [],
@@ -52,6 +53,10 @@ export default function SEO({
     document.documentElement.lang = SITE.language;
 
     upsertMeta('meta[name="description"]', { name: "description", content: description });
+    if (keywords) {
+      const content = Array.isArray(keywords) ? keywords.join(", ") : keywords;
+      upsertMeta('meta[name="keywords"]', { name: "keywords", content });
+    }
     upsertMeta('meta[name="robots"]', {
       name: "robots",
       content: noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large",
@@ -93,7 +98,7 @@ export default function SEO({
     } else if (jsonLd) {
       jsonLd.remove();
     }
-  }, [title, description, path, image, type, noindex, structuredData]);
+  }, [title, description, path, image, keywords, type, noindex, structuredData]);
 
   return null;
 }

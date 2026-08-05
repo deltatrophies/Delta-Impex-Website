@@ -35,7 +35,7 @@ export default function Blog() {
       <section className="relative bg-[#0B131E] pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/pages/home/gallery-cnc-machinery-w1200.jpg"
+            src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933063/delta-impex/images/pages/home/gallery-cnc-machinery-w1200.jpg"
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover object-center"

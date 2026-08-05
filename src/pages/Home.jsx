@@ -58,42 +58,42 @@ const FEATURES = [
 
 const GALLERY = [
   {
-    src: "/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
+    src: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933009/delta-impex/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
     alt: "CNC cutting machine type 1 front view",
     category: "CNC Machines",
     title: "CNC Cutting Machine - Type 1",
     position: "center center",
   },
   {
-    src: "/images/machinery/wood-working-machines/drill-machine/front-view.png",
+    src: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933043/delta-impex/images/machinery/wood-working-machines/drill-machine/front-view.png",
     alt: "Drill machine front view",
     category: "Woodworking Machines",
     title: "Single Drill Machine",
     position: "center center",
   },
   {
-    src: "/images/machinery/wood-working-machines/dual-drill-machine/front-view.png",
+    src: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933048/delta-impex/images/machinery/wood-working-machines/dual-drill-machine/front-view.png",
     alt: "Dual drill machine front view",
     category: "Woodworking Machines",
     title: "Dual Drill Machine",
     position: "center 52%",
   },
   {
-    src: "/images/machinery/laser-machines/laser-machine/lid-closed.png",
+    src: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933020/delta-impex/images/machinery/laser-machines/laser-machine/lid-closed.png",
     alt: "Laser machine with lid closed",
     category: "Laser Machines",
     title: "Laser Cutting Machine",
     position: "center center",
   },
   {
-    src: "/images/machinery/sanding-machines/sanding-machine/front-view.png",
+    src: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933032/delta-impex/images/machinery/sanding-machines/sanding-machine/front-view.png",
     alt: "Sanding machine front view",
     category: "Sanding Machines",
     title: "Industrial Sanding Machine",
     position: "center 52%",
   },
   {
-    src: "/images/machinery/sawing-machines/saw-machine/front-view.png",
+    src: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933038/delta-impex/images/machinery/sawing-machines/saw-machine/front-view.png",
     alt: "Circular saw machine front view",
     category: "Circular Saw Machines",
     title: "Circular Saw Machine",
@@ -107,8 +107,8 @@ export default function Home() {
   return (
     <div data-testid="page-home">
       <SEO
-        title="Delta Impex Inc. | Industrial Machinery Supplier in Jalandhar"
-        description="Delta Impex Inc. supplies new and used CNC, plastic moulding, woodworking, laser, sanding and circular saw machines from Jalandhar, Punjab."
+        title="Delta Impex Inc. | Machine Manufacturer & Supplier in Jalandhar"
+        description="Delta Impex Inc. is a machine manufacturer, seller and industrial machinery supplier in Jalandhar, Punjab for CNC, plastic moulding, woodworking, laser, sanding and circular saw machines."
         path="/"
         structuredData={[ORGANIZATION_SCHEMA, WEBSITE_SCHEMA]}
       />
@@ -121,7 +121,7 @@ export default function Home() {
             muted
             loop
             playsInline
-            poster="/images/pages/home/hero-industrial-machinery-w2000.jpg"
+            poster="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933064/delta-impex/images/pages/home/hero-industrial-machinery-w2000.jpg"
             aria-label="Industrial machinery"
           >
             <source src="/videos/home/hero-background.mp4" type="video/mp4" />
@@ -152,7 +152,8 @@ export default function Home() {
             >
               One stop shop for industrial machinery solutions.
               <br />
-              Delta Impex Incorporation provides reliable CNC machines, plastic machines,
+              Delta Impex Incorporation is a machine manufacturer, seller, and
+              industrial machinery supplier in Jalandhar providing CNC machines, plastic machines,
               woodworking machines, laser machines, sanding machines, and
               circular saw machines for industrial and commercial needs.
             </p>
@@ -323,7 +324,7 @@ export default function Home() {
           <div className="lg:col-span-6">
             <div className="relative">
               <img
-                src="/images/pages/home/workshop-preview-w1400.jpg"
+                src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933065/delta-impex/images/pages/home/workshop-preview-w1400.jpg"
                 alt="Delta Impex Inc. workshop"
                 className="w-full h-[460px] object-cover rounded-sm"
               />
@@ -343,8 +344,8 @@ export default function Home() {
               An industrial machinery company built for serious business.
             </h2>
             <p className="text-[#475569] text-base leading-relaxed mt-6">
-              Delta Impex Incorporation is an industrial machinery company
-              focused on
+              Delta Impex Incorporation is an industrial machinery manufacturer,
+              seller, and supplier in Jalandhar focused on
               providing reliable machine solutions for businesses and
               industries. We deal in CNC machines, plastic machines,
               woodworking machines, laser machines, sanding machines, and

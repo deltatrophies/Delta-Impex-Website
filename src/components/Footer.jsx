@@ -19,7 +19,7 @@ export default function Footer() {
             data-testid="footer-logo"
           >
             <img
-              src="/Logo/delta-impex-logo-transparent.png"
+              src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933005/delta-impex/Logo/delta-impex-logo-transparent.png"
               alt="Delta Impex Inc."
               className="h-12 w-auto object-contain"
             />

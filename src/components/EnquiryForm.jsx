@@ -33,6 +33,12 @@ const empty = {
   message: "",
 };
 
+const sanitizePhone = (value) => value.replace(/[^\d]/g, "").slice(0, 15);
+const isValidPhone = (value) => {
+  const digits = sanitizePhone(value);
+  return digits.length >= 10 && digits.length <= 15;
+};
+
 export default function EnquiryForm({ productSlug, defaultMachine, compact = false }) {
   const [form, setForm] = useState({
     ...empty,
@@ -41,7 +47,8 @@ export default function EnquiryForm({ productSlug, defaultMachine, compact = fal
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const update = (k, v) => setForm((f) => ({ ...f, [k]: v }));
+  const update = (k, v) =>
+    setForm((f) => ({ ...f, [k]: k === "phone" ? sanitizePhone(v) : v }));
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -53,6 +60,10 @@ export default function EnquiryForm({ productSlug, defaultMachine, compact = fal
       !form.message
     ) {
       toast.error("Please fill all required fields.");
+      return;
+    }
+    if (!isValidPhone(form.phone)) {
+      toast.error("Please enter a valid phone number with 10 to 15 digits.");
       return;
     }
     setLoading(true);
@@ -136,10 +147,15 @@ export default function EnquiryForm({ productSlug, defaultMachine, compact = fal
           <input
             data-testid="enquiry-phone"
             type="tel"
+            inputMode="numeric"
+            pattern="[0-9]{10,15}"
+            minLength={10}
+            maxLength={15}
             value={form.phone}
             onChange={(e) => update("phone", e.target.value)}
-            placeholder="+91 00000 00000"
+            placeholder="9876543210"
             className={inputCls}
+            title="Enter 10 to 15 digits only"
             required
           />
         </div>

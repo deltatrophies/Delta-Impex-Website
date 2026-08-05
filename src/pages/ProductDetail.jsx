@@ -66,7 +66,7 @@ export default function ProductDetail() {
     <div data-testid="page-product-detail" className="bg-white">
       <SEO
         title={`${product.name} | Delta Impex Inc.`}
-        description={`${product.description} Contact Delta Impex Inc. in Jalandhar for availability and details.`}
+        description={`${product.description} Contact Delta Impex Inc., an industrial machine seller and supplier in Jalandhar, Punjab, for availability and details.`}
         path={`/products/${product.slug}`}
         image={product.image}
         type="product"

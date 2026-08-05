@@ -8,6 +8,8 @@ const REQUIRED_FIELDS = [
 
 const clean = (value, maxLength) =>
   typeof value === "string" ? value.trim().slice(0, maxLength) : "";
+const cleanPhone = (value) => clean(value, 60).replace(/[^\d]/g, "").slice(0, 15);
+const isValidPhone = (value) => /^\d{10,15}$/.test(value);
 
 export default async function handler(request, response) {
   if (request.method !== "POST") {
@@ -38,6 +40,13 @@ export default async function handler(request, response) {
       });
     }
 
+    const phone = cleanPhone(input.phone);
+    if (!isValidPhone(phone)) {
+      return response.status(422).json({
+        detail: [{ loc: ["body", "phone"], msg: "Enter a valid phone number with 10 to 15 digits" }],
+      });
+    }
+
     const googleSheetsWebhookUrl = process.env.GOOGLE_SHEETS_WEBHOOK_URL;
     if (!googleSheetsWebhookUrl) {
       console.error("GOOGLE_SHEETS_WEBHOOK_URL is not configured");
@@ -46,7 +55,7 @@ export default async function handler(request, response) {
 
     const enquiry = {
       full_name: clean(input.full_name, 160),
-      phone: clean(input.phone, 60),
+      phone,
       email,
       company: clean(input.company, 200),
       machine_interested: clean(input.machine_interested, 160),
