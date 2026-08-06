@@ -3,3 +3,38 @@
   text-align: left;
   min-height: 100vh;
 }
+
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at center, rgba(212, 160, 23, 0.12), transparent 34%),
+    #0b131e;
+  opacity: 1;
+  transition: opacity 520ms ease, visibility 520ms ease;
+}
+
+.splash-screen--leaving {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.splash-screen__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .splash-screen {
+    transition-duration: 180ms;
+  }
+
+  .splash-screen__video {
+    animation: none;
+  }
+}

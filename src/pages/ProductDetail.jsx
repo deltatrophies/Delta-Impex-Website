@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { Link, useParams, Navigate } from "react-router-dom";
 import { ArrowLeft, CheckCircle2, ChevronRight } from "lucide-react";
 import { findProduct, PRODUCTS } from "../data/catalog";
@@ -36,6 +36,38 @@ export default function ProductDetail() {
     return PRODUCTS.filter(
       (p) => p.category === product.category && p.slug !== product.slug
     ).slice(0, 3);
+  }, [product]);
+
+  useEffect(() => {
+    setActive(0);
+  }, [slug]);
+
+  useEffect(() => {
+    if (!product) return undefined;
+
+    const uniqueGallery = [...new Set(product.gallery)];
+    const preloadLinks = uniqueGallery.map((src) => {
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.as = "image";
+      link.href = src;
+      document.head.appendChild(link);
+      return link;
+    });
+
+    const preloadedImages = uniqueGallery.map((src) => {
+      const image = new Image();
+      image.decoding = "async";
+      image.src = src;
+      return image;
+    });
+
+    return () => {
+      preloadLinks.forEach((link) => link.remove());
+      preloadedImages.forEach((image) => {
+        image.src = "";
+      });
+    };
   }, [product]);
 
   if (!product) return <Navigate to="/products" replace />;
@@ -99,6 +131,9 @@ export default function ProductDetail() {
                 src={gallery[active]}
                 alt={product.name}
                 data-testid="product-main-image"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
                 className={`w-full h-[420px] md:h-[560px] ${
                   product.imageFit === "contain" ? "object-contain p-3" : "object-cover"
                 }`}
@@ -124,6 +159,9 @@ export default function ProductDetail() {
                   <img
                     src={src}
                     alt={`thumb-${i}`}
+                    loading="eager"
+                    fetchPriority={i < 2 ? "high" : "auto"}
+                    decoding="async"
                     className={`w-full h-full ${
                       product.imageFit === "contain" ? "object-contain p-1" : "object-cover"
                     }`}

@@ -124,7 +124,10 @@ export default function Home() {
             poster="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933064/delta-impex/images/pages/home/hero-industrial-machinery-w2000.jpg"
             aria-label="Industrial machinery"
           >
-            <source src="/videos/home/hero-background.mp4" type="video/mp4" />
+            <source
+              src="https://res.cloudinary.com/dliriew7z/video/upload/q_auto/v1786003637/delta-impex/videos/home/hero-background.mp4"
+              type="video/mp4"
+            />
           </video>
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B131E] via-[#0B131E]/85 to-[#0B131E]/30" />
         </div>

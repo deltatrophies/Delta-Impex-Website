@@ -1,0 +1,30 @@
+{
+  "uploadedAt": "2026-08-06T08:23:27.200Z",
+  "cloudName": "dliriew7z",
+  "results": [
+    {
+      "local": "/videos/splash/delta-impex-splash.mp4",
+      "public_id": "delta-impex/videos/splash/delta-impex-splash",
+      "asset_folder": "delta-impex/videos/splash",
+      "width": 1280,
+      "height": 720,
+      "duration": 4.583333,
+      "bytes": 876945,
+      "format": "mp4",
+      "secure_url": "https://res.cloudinary.com/dliriew7z/video/upload/v1786004604/delta-impex/videos/splash/delta-impex-splash.mp4",
+      "delivery": "https://res.cloudinary.com/dliriew7z/video/upload/q_auto/v1786004604/delta-impex/videos/splash/delta-impex-splash.mp4"
+    },
+    {
+      "local": "/videos/home/hero-background.mp4",
+      "public_id": "delta-impex/videos/home/hero-background",
+      "asset_folder": "delta-impex/videos/home",
+      "width": 1920,
+      "height": 1080,
+      "duration": 8.167,
+      "bytes": 19025748,
+      "format": "mp4",
+      "secure_url": "https://res.cloudinary.com/dliriew7z/video/upload/v1786003637/delta-impex/videos/home/hero-background.mp4",
+      "delivery": "https://res.cloudinary.com/dliriew7z/video/upload/q_auto/v1786003637/delta-impex/videos/home/hero-background.mp4"
+    }
+  ]
+}

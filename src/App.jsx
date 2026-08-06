@@ -4,6 +4,7 @@ import { Toaster } from "sonner";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SplashScreen from "@/components/SplashScreen";
 import ScrollToTop from "@/components/ScrollToTop";
 
 import Home from "@/pages/Home";
@@ -18,6 +19,7 @@ import NotFound from "@/pages/NotFound";
 function App() {
   return (
     <div className="App min-h-screen bg-white text-[#0B131E]">
+      <SplashScreen />
       <BrowserRouter>
         <ScrollToTop />
         <Navbar />
