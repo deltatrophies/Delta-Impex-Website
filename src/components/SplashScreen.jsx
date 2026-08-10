@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 
 const SPLASH_SEEN_KEY = "delta-tech-force-splash-seen";
-const SPLASH_DURATION_MS = 3600;
+const SPLASH_DURATION_MS = 1450;
+const SPLASH_EXIT_MS = 260;
 
 export default function SplashScreen() {
   const [visible, setVisible] = useState(() => {
@@ -18,7 +19,7 @@ export default function SplashScreen() {
     window.clearTimeout(hideTimer.current);
     window.sessionStorage.setItem(SPLASH_SEEN_KEY, "true");
     setLeaving(true);
-    removeTimer.current = window.setTimeout(() => setVisible(false), 720);
+    removeTimer.current = window.setTimeout(() => setVisible(false), SPLASH_EXIT_MS);
   };
 
   useEffect(() => {
@@ -45,8 +46,12 @@ export default function SplashScreen() {
         <div className="splash-screen__logo-wrap">
           <img
             className="splash-screen__logo"
-            src="/Logo/delta-impex-logo-transparent.png"
+            src="/Logo/delta-tech-force-logo-optimized.webp"
             alt="Delta Tech Force"
+            width="900"
+            height="576"
+            decoding="async"
+            fetchPriority="high"
           />
         </div>
         <div className="splash-screen__name" aria-hidden="true">
