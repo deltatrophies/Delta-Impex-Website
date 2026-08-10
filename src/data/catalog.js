@@ -1,4 +1,4 @@
-﻿// Delta Impex Inc. - Product Catalog
+﻿// Delta Tech Force - Product Catalog
 // Image assets are stored locally under /public/images so the website does
 // not depend on third-party image URLs at runtime.
 
@@ -10,7 +10,7 @@ export const CATEGORIES = [
     description:
       "Industrial plastic processing machines designed for consistent, accurate, and efficient production.",
     image:
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933024/delta-impex/images/machinery/plastic-machines/plastic-moulding-machine-type-1/front-view.png",
+      "/images/machinery/plastic-machines/plastic-moulding-machine-type-1/front-view.png",
     imageFit: "contain",
   },
   {
@@ -19,7 +19,7 @@ export const CATEGORIES = [
     short: "Craftsmanship",
     description:
       "CNC, sanding, circular saw, SPM, router, and drill machines for woodworking production.",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933053/delta-impex/images/machinery/wood-working-machines/router-machine/front-view.png",
+    image: "/images/machinery/wood-working-machines/router-machine/front-view.png",
     imageFit: "contain",
   },
   {
@@ -28,7 +28,7 @@ export const CATEGORIES = [
     short: "Laser Signage",
     description:
       "Laser machines for cutting, engraving, marking, and signage production work.",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933020/delta-impex/images/machinery/laser-machines/laser-machine/lid-closed.png",
+    image: "/images/machinery/laser-machines/laser-machine/lid-closed.png",
     imageFit: "contain",
   },
 ];
@@ -42,7 +42,7 @@ export const SUBCATEGORIES = [
     description:
       "Industrial plastic moulding machine with a robust hydraulic configuration for consistent production.",
     image:
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933024/delta-impex/images/machinery/plastic-machines/plastic-moulding-machine-type-1/front-view.png",
+      "/images/machinery/plastic-machines/plastic-moulding-machine-type-1/front-view.png",
     imageFit: "contain",
   },
   {
@@ -53,7 +53,7 @@ export const SUBCATEGORIES = [
     description:
       "Enclosed plastic moulding machine built for controlled, reliable, and repeatable manufacturing.",
     image:
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933028/delta-impex/images/machinery/plastic-machines/plastic-moulding-machine-type-2/front-view.png",
+      "/images/machinery/plastic-machines/plastic-moulding-machine-type-2/front-view.png",
     imageFit: "contain",
   },
   {
@@ -63,7 +63,7 @@ export const SUBCATEGORIES = [
     short: "Precision CNC",
     description:
       "CNC machines for accurate cutting, shaping, engraving, and repeatable woodworking production.",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933009/delta-impex/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
+    image: "/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
     imageFit: "contain",
   },
   {
@@ -73,7 +73,7 @@ export const SUBCATEGORIES = [
     short: "Surface Finishing",
     description:
       "Reliable sanding solutions for smooth, consistent, and production-ready surfaces.",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933032/delta-impex/images/machinery/sanding-machines/sanding-machine/front-view.png",
+    image: "/images/machinery/sanding-machines/sanding-machine/front-view.png",
     imageFit: "contain",
   },
   {
@@ -83,7 +83,7 @@ export const SUBCATEGORIES = [
     short: "Precision Cutting",
     description:
       "Strong and accurate circular saw machines for clean, efficient woodworking cuts.",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933038/delta-impex/images/machinery/sawing-machines/saw-machine/front-view.png",
+    image: "/images/machinery/sawing-machines/saw-machine/front-view.png",
     imageFit: "contain",
   },
   {
@@ -94,7 +94,7 @@ export const SUBCATEGORIES = [
     description:
       "Special purpose machines designed for focused, repeatable, and application-specific production work.",
     image:
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933057/delta-impex/images/machinery/wood-working-machines/wood-turning-lathe/front-view.png",
+      "/images/machinery/wood-working-machines/wood-turning-lathe/front-view.png",
     imageFit: "contain",
   },
   {
@@ -105,7 +105,7 @@ export const SUBCATEGORIES = [
     description:
       "Versatile router machines for grooving, profiling, shaping, and edge work.",
     image:
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933053/delta-impex/images/machinery/wood-working-machines/router-machine/front-view.png",
+      "/images/machinery/wood-working-machines/router-machine/front-view.png",
     imageFit: "contain",
   },
   {
@@ -116,7 +116,7 @@ export const SUBCATEGORIES = [
     description:
       "Accurate single and dual-head drilling machines for repeatable woodworking operations.",
     image:
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933048/delta-impex/images/machinery/wood-working-machines/dual-drill-machine/front-view.png",
+      "/images/machinery/wood-working-machines/dual-drill-machine/front-view.png",
     imageFit: "contain",
   },
   {
@@ -126,7 +126,7 @@ export const SUBCATEGORIES = [
     short: "Precision Light",
     description:
       "Advanced machines for laser cutting, engraving, marking, and precision signage design work.",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933020/delta-impex/images/machinery/laser-machines/laser-machine/lid-closed.png",
+    image: "/images/machinery/laser-machines/laser-machine/lid-closed.png",
     imageFit: "contain",
   },
 ];
@@ -186,11 +186,11 @@ export const PRODUCTS = [
     ],
     applications:
       "Furniture manufacturing, signage, panel processing, modular production, and prototyping.",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933009/delta-impex/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
+    image: "/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
     imageFit: "contain",
     gallery: [
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933009/delta-impex/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933012/delta-impex/images/machinery/cnc-machines/cnc-cutting-machine-type-1/side-view.png",
+      "/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
+      "/images/machinery/cnc-machines/cnc-cutting-machine-type-1/side-view.png",
     ],
     specs: {
       machine_type: "CNC Cutting Machine - Type 1",
@@ -221,11 +221,11 @@ export const PRODUCTS = [
     ],
     applications:
       "Furniture components, panel processing, signage, workshop production, and custom manufacturing.",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933014/delta-impex/images/machinery/cnc-machines/cnc-cutting-machine-type-2/front-view.png",
+    image: "/images/machinery/cnc-machines/cnc-cutting-machine-type-2/front-view.png",
     imageFit: "contain",
     gallery: [
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933014/delta-impex/images/machinery/cnc-machines/cnc-cutting-machine-type-2/front-view.png",
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933017/delta-impex/images/machinery/cnc-machines/cnc-cutting-machine-type-2/side-view.png",
+      "/images/machinery/cnc-machines/cnc-cutting-machine-type-2/front-view.png",
+      "/images/machinery/cnc-machines/cnc-cutting-machine-type-2/side-view.png",
     ],
     specs: {
       machine_type: "CNC Cutting Machine - Type 2",
@@ -257,12 +257,12 @@ export const PRODUCTS = [
     applications:
       "Plastic components, household products, industrial parts, packaging items, and custom moulded products.",
     image:
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933024/delta-impex/images/machinery/plastic-machines/plastic-moulding-machine-type-1/front-view.png",
+      "/images/machinery/plastic-machines/plastic-moulding-machine-type-1/front-view.png",
     imageFit: "contain",
     gallery: [
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933024/delta-impex/images/machinery/plastic-machines/plastic-moulding-machine-type-1/front-view.png",
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933025/delta-impex/images/machinery/plastic-machines/plastic-moulding-machine-type-1/side-view-1.png",
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933027/delta-impex/images/machinery/plastic-machines/plastic-moulding-machine-type-1/side-view-2.png",
+      "/images/machinery/plastic-machines/plastic-moulding-machine-type-1/front-view.png",
+      "/images/machinery/plastic-machines/plastic-moulding-machine-type-1/side-view-1.png",
+      "/images/machinery/plastic-machines/plastic-moulding-machine-type-1/side-view-2.png",
     ],
     specs: {
       machine_type: "Plastic Moulding Machine - Type 1",
@@ -294,11 +294,11 @@ export const PRODUCTS = [
     applications:
       "Injection-moulded components, consumer products, automotive parts, packaging items, and industrial products.",
     image:
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933028/delta-impex/images/machinery/plastic-machines/plastic-moulding-machine-type-2/front-view.png",
+      "/images/machinery/plastic-machines/plastic-moulding-machine-type-2/front-view.png",
     imageFit: "contain",
     gallery: [
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933028/delta-impex/images/machinery/plastic-machines/plastic-moulding-machine-type-2/front-view.png",
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933030/delta-impex/images/machinery/plastic-machines/plastic-moulding-machine-type-2/side-view.png",
+      "/images/machinery/plastic-machines/plastic-moulding-machine-type-2/front-view.png",
+      "/images/machinery/plastic-machines/plastic-moulding-machine-type-2/side-view.png",
     ],
     specs: {
       machine_type: "Plastic Moulding Machine - Type 2",
@@ -329,11 +329,11 @@ export const PRODUCTS = [
     ],
     applications:
       "Furniture manufacturing, cabinetry, joinery, edge profiling, and carpentry workshops.",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933053/delta-impex/images/machinery/wood-working-machines/router-machine/front-view.png",
+    image: "/images/machinery/wood-working-machines/router-machine/front-view.png",
     imageFit: "contain",
     gallery: [
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933053/delta-impex/images/machinery/wood-working-machines/router-machine/front-view.png",
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933056/delta-impex/images/machinery/wood-working-machines/router-machine/side-view.png",
+      "/images/machinery/wood-working-machines/router-machine/front-view.png",
+      "/images/machinery/wood-working-machines/router-machine/side-view.png",
     ],
     specs: {
       machine_type: "Wood Router",
@@ -364,11 +364,11 @@ export const PRODUCTS = [
     ],
     applications:
       "Custom production tasks, workshop operations, component processing, and industrial manufacturing support.",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933057/delta-impex/images/machinery/wood-working-machines/wood-turning-lathe/front-view.png",
+    image: "/images/machinery/wood-working-machines/wood-turning-lathe/front-view.png",
     imageFit: "contain",
     gallery: [
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933057/delta-impex/images/machinery/wood-working-machines/wood-turning-lathe/front-view.png",
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933058/delta-impex/images/machinery/wood-working-machines/wood-turning-lathe/side-view.png",
+      "/images/machinery/wood-working-machines/wood-turning-lathe/front-view.png",
+      "/images/machinery/wood-working-machines/wood-turning-lathe/side-view.png",
     ],
     specs: {
       machine_type: "SPM (Special Purpose Machine)",
@@ -400,11 +400,11 @@ export const PRODUCTS = [
     applications:
       "Furniture components, joinery, cabinet work, and general woodworking production.",
     image:
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933043/delta-impex/images/machinery/wood-working-machines/drill-machine/front-view.png",
+      "/images/machinery/wood-working-machines/drill-machine/front-view.png",
     imageFit: "contain",
     gallery: [
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933043/delta-impex/images/machinery/wood-working-machines/drill-machine/front-view.png",
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933046/delta-impex/images/machinery/wood-working-machines/drill-machine/side-view.png",
+      "/images/machinery/wood-working-machines/drill-machine/front-view.png",
+      "/images/machinery/wood-working-machines/drill-machine/side-view.png",
     ],
     specs: {
       machine_type: "Single Drill",
@@ -436,11 +436,11 @@ export const PRODUCTS = [
     applications:
       "Furniture production, cabinet components, joinery, and repetitive drilling work.",
     image:
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933048/delta-impex/images/machinery/wood-working-machines/dual-drill-machine/front-view.png",
+      "/images/machinery/wood-working-machines/dual-drill-machine/front-view.png",
     imageFit: "contain",
     gallery: [
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933048/delta-impex/images/machinery/wood-working-machines/dual-drill-machine/front-view.png",
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933051/delta-impex/images/machinery/wood-working-machines/dual-drill-machine/side-view.png",
+      "/images/machinery/wood-working-machines/dual-drill-machine/front-view.png",
+      "/images/machinery/wood-working-machines/dual-drill-machine/side-view.png",
     ],
     specs: {
       machine_type: "Dual Drill",
@@ -471,11 +471,11 @@ export const PRODUCTS = [
     ],
     applications:
       "Signage, jewelry, metal fabrication, advertising and design industries.",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933020/delta-impex/images/machinery/laser-machines/laser-machine/lid-closed.png",
+    image: "/images/machinery/laser-machines/laser-machine/lid-closed.png",
     imageFit: "contain",
     gallery: [
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933020/delta-impex/images/machinery/laser-machines/laser-machine/lid-closed.png",
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933023/delta-impex/images/machinery/laser-machines/laser-machine/lid-open.png",
+      "/images/machinery/laser-machines/laser-machine/lid-closed.png",
+      "/images/machinery/laser-machines/laser-machine/lid-open.png",
     ],
     specs: {
       machine_type: "Laser Cutter",
@@ -506,11 +506,11 @@ export const PRODUCTS = [
     ],
     applications:
       "Furniture finishing, automotive prep, wood industry, surface preparation.",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933032/delta-impex/images/machinery/sanding-machines/sanding-machine/front-view.png",
+    image: "/images/machinery/sanding-machines/sanding-machine/front-view.png",
     imageFit: "contain",
     gallery: [
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933032/delta-impex/images/machinery/sanding-machines/sanding-machine/front-view.png",
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933036/delta-impex/images/machinery/sanding-machines/sanding-machine/side-view.png",
+      "/images/machinery/sanding-machines/sanding-machine/front-view.png",
+      "/images/machinery/sanding-machines/sanding-machine/side-view.png",
     ],
     specs: {
       machine_type: "Sanding",
@@ -540,11 +540,11 @@ export const PRODUCTS = [
       "Reliable performance",
     ],
     applications: "General workshops, circular cutting operations, lumber yards, fabrication, and production work.",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933038/delta-impex/images/machinery/sawing-machines/saw-machine/front-view.png",
+    image: "/images/machinery/sawing-machines/saw-machine/front-view.png",
     imageFit: "contain",
     gallery: [
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933038/delta-impex/images/machinery/sawing-machines/saw-machine/front-view.png",
-      "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933041/delta-impex/images/machinery/sawing-machines/saw-machine/side-view.png",
+      "/images/machinery/sawing-machines/saw-machine/front-view.png",
+      "/images/machinery/sawing-machines/saw-machine/side-view.png",
     ],
     specs: {
       machine_type: "Circular Saw",

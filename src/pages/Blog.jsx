@@ -10,9 +10,9 @@ export default function Blog() {
     "@type": "Blog",
     "@id": `${SITE.url}/blog#blog`,
     url: `${SITE.url}/blog`,
-    name: "Delta Impex Inc. Industrial Machinery Blog",
+    name: "Delta Tech Force Industrial Machinery Blog",
     description:
-      "Practical industrial machinery buying guides, selection advice and workshop planning articles from Delta Impex Inc.",
+      "Practical industrial machinery buying guides, selection advice and workshop planning articles from Delta Tech Force",
     publisher: { "@id": `${SITE.url}/#organization` },
     blogPost: BLOG_POSTS.map((post) => ({
       "@type": "BlogPosting",
@@ -26,8 +26,8 @@ export default function Blog() {
   return (
     <div data-testid="page-blog">
       <SEO
-        title="Industrial Machinery Blog & Buying Guides | Delta Impex Inc."
-        description="Read practical CNC, plastic moulding, woodworking and used machinery buying guides from Delta Impex Inc., Jalandhar."
+        title="Industrial Machinery Blog & Buying Guides | Delta Tech Force"
+        description="Read practical CNC, plastic moulding, woodworking and used machinery buying guides from Delta Tech Force, Jalandhar."
         path="/blog"
         structuredData={blogSchema}
       />
@@ -35,7 +35,7 @@ export default function Blog() {
       <section className="relative bg-[#0B131E] pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933063/delta-impex/images/pages/home/gallery-cnc-machinery-w1200.jpg"
+            src="/images/pages/home/gallery-cnc-machinery-w1200.jpg"
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover object-center"
@@ -117,7 +117,7 @@ export default function Blog() {
             Discuss Your Machine Requirement
           </h2>
           <p className="text-[#64748B] text-lg mt-5 max-w-2xl mx-auto leading-relaxed">
-            Share your material, application and production goals with the Delta Impex Inc. team.
+            Share your material, application and production goals with the Delta Tech Force team.
           </p>
           <Link
             to="/contact#enquiry"

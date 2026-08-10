@@ -8,7 +8,7 @@ export const BLOG_POSTS = [
     published: "2026-06-28",
     updated: "2026-06-28",
     readTime: "8 min read",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933009/delta-impex/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
+    image: "/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
     imageAlt: "Industrial CNC cutting machine for workshop production",
     keywords: [
       "CNC cutting machine buying guide",
@@ -70,7 +70,7 @@ export const BLOG_POSTS = [
       },
     ],
     conclusion:
-      "The best CNC cutting machine is the one that fits your regular material, component size, production volume, operator capability and service expectations. Delta Impex Inc. can help you compare available CNC cutting configurations against a clear workshop requirement.",
+      "The best CNC cutting machine is the one that fits your regular material, component size, production volume, operator capability and service expectations. Delta Tech Force can help you compare available CNC cutting configurations against a clear workshop requirement.",
     relatedProducts: ["cnc-cutting-machine-type-1", "cnc-cutting-machine-type-2"],
   },
   {
@@ -82,7 +82,7 @@ export const BLOG_POSTS = [
     published: "2026-06-20",
     updated: "2026-06-20",
     readTime: "7 min read",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933065/delta-impex/images/pages/home/workshop-preview-w1400.jpg",
+    image: "/images/pages/home/workshop-preview-w1400.jpg",
     imageAlt: "Industrial workshop with machinery available for business production",
     keywords: [
       "new vs used industrial machinery",
@@ -141,7 +141,7 @@ export const BLOG_POSTS = [
       },
     ],
     conclusion:
-      "Choose new machinery when configuration, predictable condition and long-term intensive use are most important. Consider used machinery when a verified machine meets the requirement and capital efficiency matters. Delta Impex Inc. supplies both old and new industrial machines and can help buyers evaluate the practical trade-offs.",
+      "Choose new machinery when configuration, predictable condition and long-term intensive use are most important. Consider used machinery when a verified machine meets the requirement and capital efficiency matters. Delta Tech Force supplies both old and new industrial machines and can help buyers evaluate the practical trade-offs.",
     relatedProducts: ["cnc-cutting-machine-type-2", "industrial-sanding-machine", "sawing-machine"],
   },
   {
@@ -153,7 +153,7 @@ export const BLOG_POSTS = [
     published: "2026-06-12",
     updated: "2026-06-12",
     readTime: "8 min read",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933028/delta-impex/images/machinery/plastic-machines/plastic-moulding-machine-type-2/front-view.png",
+    image: "/images/machinery/plastic-machines/plastic-moulding-machine-type-2/front-view.png",
     imageAlt: "Automatic plastic moulding machine for industrial manufacturing",
     keywords: [
       "plastic moulding machine buying guide",
@@ -214,7 +214,7 @@ export const BLOG_POSTS = [
       },
     ],
     conclusion:
-      "A reliable selection starts with complete product and mould data. Once those details are known, capacity, controls, utilities and support can be compared logically. Delta Impex Inc. can discuss new and used plastic moulding machine options based on your manufacturing requirement.",
+      "A reliable selection starts with complete product and mould data. Once those details are known, capacity, controls, utilities and support can be compared logically. Delta Tech Force can discuss new and used plastic moulding machine options based on your manufacturing requirement.",
     relatedProducts: ["plastic-moulding-machine-type-1", "plastic-moulding-machine-type-2"],
   },
   {
@@ -226,7 +226,7 @@ export const BLOG_POSTS = [
     published: "2026-06-04",
     updated: "2026-06-04",
     readTime: "7 min read",
-    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933053/delta-impex/images/machinery/wood-working-machines/router-machine/front-view.png",
+    image: "/images/machinery/wood-working-machines/router-machine/front-view.png",
     imageAlt: "Wood router machine used in a production workshop",
     keywords: [
       "woodworking machines for workshop",
@@ -284,7 +284,7 @@ export const BLOG_POSTS = [
       },
     ],
     conclusion:
-      "A practical woodworking setup connects each machine to a defined production step. Delta Impex Inc. supplies router, drilling, SPM, sanding and circular saw options and can help workshops compare equipment according to material, component size and output goals.",
+      "A practical woodworking setup connects each machine to a defined production step. Delta Tech Force supplies router, drilling, SPM, sanding and circular saw options and can help workshops compare equipment according to material, component size and output goals.",
     relatedProducts: [
       "wood-working-machine",
       "single-drill-machine",

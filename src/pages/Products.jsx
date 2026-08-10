@@ -94,17 +94,17 @@ export default function Products() {
   return (
     <div data-testid="page-products">
       <SEO
-        title="Industrial Machines for Sale in Jalandhar | Delta Impex Inc."
-        description="Explore new and used industrial machines for sale in Jalandhar from Delta Impex Inc., including CNC, plastic moulding, woodworking, drilling, laser, sanding and circular saw machines."
+        title="Industrial Machines for Sale in Jalandhar | Delta Tech Force"
+        description="Explore new and used industrial machines for sale in Jalandhar from Delta Tech Force, including CNC, plastic moulding, woodworking, drilling, laser, sanding and circular saw machines."
         path="/products"
-        image="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933066/delta-impex/images/pages/products/hero-w2000.jpg"
+        image="/images/pages/products/hero-w2000.jpg"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
           url: `${SITE.url}/products`,
           name: "Industrial Machines for Sale in Jalandhar",
           description:
-            "New and used industrial machinery supplied by Delta Impex Inc., a machine seller and supplier in Jalandhar, Punjab.",
+            "New and used industrial machinery supplied by Delta Tech Force, a machine seller and supplier in Jalandhar, Punjab.",
           mainEntity: {
             "@type": "ItemList",
             itemListElement: PRODUCTS.map((product, index) => ({
@@ -120,7 +120,7 @@ export default function Products() {
       <section className="relative min-h-[60vh] flex items-center bg-[#0B131E] overflow-hidden pt-20">
         <div className="absolute inset-0">
           <img
-            src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933066/delta-impex/images/pages/products/hero-w2000.jpg"
+            src="/images/pages/products/hero-w2000.jpg"
             alt="Industrial products"
             className="w-full h-full object-cover opacity-45"
           />
@@ -236,7 +236,7 @@ export default function Products() {
             Need More Details About Any Machine?
           </h2>
           <p className="text-white/70 text-lg leading-relaxed mt-6 max-w-2xl mx-auto">
-            Share your requirement with Delta Impex Inc. and we will help you with
+            Share your requirement with Delta Tech Force and we will help you with
             suitable machine details, availability, and guidance.
           </p>
           <Link

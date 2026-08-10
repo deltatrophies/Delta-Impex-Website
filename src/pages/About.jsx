@@ -53,26 +53,26 @@ export default function About() {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     url: `${SITE.url}/about`,
-    name: "About Delta Impex Inc.",
-    description: "Learn about Delta Impex Inc., an industrial machinery supplier based in Jalandhar, Punjab.",
+    name: "About Delta Tech Force",
+    description: "Learn about Delta Tech Force, an industrial machinery supplier based in Jalandhar, Punjab.",
     mainEntity: { "@id": `${SITE.url}/#organization` },
   };
 
   return (
     <div data-testid="page-about">
       <SEO
-        title="About Delta Impex Inc. | Industrial Machinery Company"
-        description="Learn about Delta Impex Inc., a Jalandhar-based supplier of new and used CNC, plastic, woodworking, laser, sanding and circular saw machines."
+        title="About Delta Tech Force | Industrial Machinery Company"
+        description="Learn about Delta Tech Force, a Jalandhar-based supplier of new and used CNC, plastic, woodworking, laser, sanding and circular saw machines."
         path="/about"
-        image="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933059/delta-impex/images/pages/about/hero-w2000.jpg"
+        image="/images/pages/about/hero-w2000.jpg"
         structuredData={aboutSchema}
       />
       {/* HERO */}
       <section className="relative min-h-[70vh] flex items-center bg-[#0B131E] overflow-hidden pt-20">
         <div className="absolute inset-0">
           <img
-            src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933059/delta-impex/images/pages/about/hero-w2000.jpg"
-            alt="Delta Impex Inc. workshop"
+            src="/images/pages/about/hero-w2000.jpg"
+            alt="Delta Tech Force workshop"
             className="w-full h-full object-cover opacity-45"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B131E] via-[#0B131E]/80 to-[#0B131E]/30" />
@@ -85,7 +85,7 @@ export default function About() {
             data-testid="about-hero-heading"
             className="font-heading text-4xl sm:text-5xl lg:text-7xl font-black text-white tracking-tight leading-[1.05] mt-6"
           >
-            About <span className="text-[#D4A017]">Delta Impex Incorporation</span>
+            About <span className="text-[#D4A017]">Delta Tech Force</span>
           </h1>
           <p className="text-lg md:text-xl text-white/75 max-w-3xl mt-6 leading-relaxed">
             Reliable Industrial Machinery Solutions for Businesses.
@@ -104,7 +104,7 @@ export default function About() {
               Who We Are
             </h2>
             <p className="text-[#475569] text-base leading-relaxed mt-6">
-              Delta Impex Incorporation is a professional industrial machinery company
+              Delta Tech Force is a professional industrial machinery company
               dealing in a wide range of machines for different industries. We
               showcase plastic processing machines, woodworking machines, and
               signage machines with subcategories like CNC, sanding, router,
@@ -116,7 +116,7 @@ export default function About() {
           </div>
           <div className="lg:col-span-6">
             <img
-              src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933061/delta-impex/images/pages/about/workshop-w1400.png"
+              src="/images/pages/about/workshop-w1400.png"
               alt="Company"
               className="w-full h-[460px] object-cover rounded-sm"
             />
@@ -139,7 +139,7 @@ export default function About() {
             precision work, a plastic processing machine for production, a
             woodworking machine for furniture or material work, a signage laser
             machine for cutting and engraving, a sanding machine for finishing,
-            or a circular saw machine for cutting, Delta Impex Inc. provides a clean and
+            or a circular saw machine for cutting, Delta Tech Force provides a clean and
             organized platform to showcase available machinery.
           </p>
         </div>
@@ -254,7 +254,7 @@ export default function About() {
             data-testid="about-cta-contact"
             className="mt-10 inline-flex items-center gap-2 bg-[#D4A017] text-[#0B131E] hover:bg-[#B58812] px-8 py-4 rounded-sm font-bold text-sm uppercase tracking-wider transition-colors"
           >
-            Contact Delta Impex Inc. <ArrowRight className="w-4 h-4" />
+            Contact Delta Tech Force <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </section>

@@ -44,13 +44,13 @@ export default function Navbar() {
             className="flex items-center gap-3 group"
           >
             <img
-              src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933005/delta-impex/Logo/delta-impex-logo-transparent.png"
-              alt="Delta Impex Inc."
+              src="/Logo/delta-impex-logo-transparent.png"
+              alt="Delta Tech Force"
               className="h-12 w-auto object-contain"
             />
             <span className="font-heading text-xl sm:text-2xl font-black tracking-tight text-white leading-none">
-              Delta <span className="text-[#D4A017]">Impex</span>
-              <span className="ml-1 text-white/85">Inc.</span>
+              Delta <span className="text-[#D4A017]">Tech</span>
+              <span className="ml-1 text-white/85">Force</span>
             </span>
           </Link>
 

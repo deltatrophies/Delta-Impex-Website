@@ -27,7 +27,7 @@ const FEATURES = [
   {
     icon: Layers,
     title: "Wide Range of Machines",
-    text: "Delta Impex Inc. offers multiple types of machines including CNC, plastic, woodworking, laser, sanding, and circular saw machines.",
+    text: "Delta Tech Force offers multiple types of machines including CNC, plastic, woodworking, laser, sanding, and circular saw machines.",
   },
   {
     icon: Wrench,
@@ -47,7 +47,7 @@ const FEATURES = [
   {
     icon: Factory,
     title: "Industrial Experience",
-    text: "Delta Impex Inc. understands industrial machine requirements and helps businesses find suitable machinery.",
+    text: "Delta Tech Force understands industrial machine requirements and helps businesses find suitable machinery.",
   },
   {
     icon: Users,
@@ -58,42 +58,42 @@ const FEATURES = [
 
 const GALLERY = [
   {
-    src: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933009/delta-impex/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
+    src: "/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
     alt: "CNC cutting machine type 1 front view",
     category: "CNC Machines",
     title: "CNC Cutting Machine - Type 1",
     position: "center center",
   },
   {
-    src: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933043/delta-impex/images/machinery/wood-working-machines/drill-machine/front-view.png",
+    src: "/images/machinery/wood-working-machines/drill-machine/front-view.png",
     alt: "Drill machine front view",
     category: "Woodworking Machines",
     title: "Single Drill Machine",
     position: "center center",
   },
   {
-    src: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933048/delta-impex/images/machinery/wood-working-machines/dual-drill-machine/front-view.png",
+    src: "/images/machinery/wood-working-machines/dual-drill-machine/front-view.png",
     alt: "Dual drill machine front view",
     category: "Woodworking Machines",
     title: "Dual Drill Machine",
     position: "center 52%",
   },
   {
-    src: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933020/delta-impex/images/machinery/laser-machines/laser-machine/lid-closed.png",
+    src: "/images/machinery/laser-machines/laser-machine/lid-closed.png",
     alt: "Laser machine with lid closed",
     category: "Laser Machines",
     title: "Laser Cutting Machine",
     position: "center center",
   },
   {
-    src: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933032/delta-impex/images/machinery/sanding-machines/sanding-machine/front-view.png",
+    src: "/images/machinery/sanding-machines/sanding-machine/front-view.png",
     alt: "Sanding machine front view",
     category: "Sanding Machines",
     title: "Industrial Sanding Machine",
     position: "center 52%",
   },
   {
-    src: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933038/delta-impex/images/machinery/sawing-machines/saw-machine/front-view.png",
+    src: "/images/machinery/sawing-machines/saw-machine/front-view.png",
     alt: "Circular saw machine front view",
     category: "Circular Saw Machines",
     title: "Circular Saw Machine",
@@ -107,8 +107,8 @@ export default function Home() {
   return (
     <div data-testid="page-home">
       <SEO
-        title="Delta Impex Inc. | Machine Manufacturer & Supplier in Jalandhar"
-        description="Delta Impex Inc. is a machine manufacturer, seller and industrial machinery supplier in Jalandhar, Punjab for CNC, plastic moulding, woodworking, laser, sanding and circular saw machines."
+        title="Delta Tech Force | Machine Manufacturer & Supplier in Jalandhar"
+        description="Delta Tech Force is a machine manufacturer, seller and industrial machinery supplier in Jalandhar, Punjab for CNC, plastic moulding, woodworking, laser, sanding and circular saw machines."
         path="/"
         structuredData={[ORGANIZATION_SCHEMA, WEBSITE_SCHEMA]}
       />
@@ -121,11 +121,11 @@ export default function Home() {
             muted
             loop
             playsInline
-            poster="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933064/delta-impex/images/pages/home/hero-industrial-machinery-w2000.jpg"
+            poster="/images/pages/home/hero-industrial-machinery-w2000.jpg"
             aria-label="Industrial machinery"
           >
             <source
-              src="https://res.cloudinary.com/dliriew7z/video/upload/q_auto/v1786003637/delta-impex/videos/home/hero-background.mp4"
+              src="/videos/home/hero-background.mp4"
               type="video/mp4"
             />
           </video>
@@ -138,7 +138,7 @@ export default function Home() {
               data-testid="hero-overline"
               className="section-label di-overline text-[#D4A017]"
             >
-              Delta Impex Incorporation — One Stop Shop
+              Delta Tech Force — One Stop Shop
             </span>
             <h1
               data-testid="hero-heading"
@@ -155,7 +155,7 @@ export default function Home() {
             >
               One stop shop for industrial machinery solutions.
               <br />
-              Delta Impex Incorporation is a machine manufacturer, seller, and
+              Delta Tech Force is a machine manufacturer, seller, and
               industrial machinery supplier in Jalandhar providing CNC machines, plastic machines,
               woodworking machines, laser machines, sanding machines, and
               circular saw machines for industrial and commercial needs.
@@ -285,7 +285,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-14">
             <span className="section-label di-overline text-[#D4A017]">
-              Why Delta Impex Inc.
+              Why Delta Tech Force
             </span>
             <h2 className="font-heading text-3xl md:text-5xl font-bold text-white tracking-tight mt-4">
               Built for Industry.<br />
@@ -327,8 +327,8 @@ export default function Home() {
           <div className="lg:col-span-6">
             <div className="relative">
               <img
-                src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933065/delta-impex/images/pages/home/workshop-preview-w1400.jpg"
-                alt="Delta Impex Inc. workshop"
+                src="/images/pages/home/workshop-preview-w1400.jpg"
+                alt="Delta Tech Force workshop"
                 className="w-full h-[460px] object-cover rounded-sm"
               />
               <div className="absolute -bottom-8 -right-4 md:-right-8 bg-[#D4A017] text-[#0B131E] p-6 md:p-8 rounded-sm max-w-xs shadow-xl">
@@ -341,13 +341,13 @@ export default function Home() {
           </div>
           <div className="lg:col-span-6">
             <span className="section-label di-overline text-[#D4A017]">
-              About Delta Impex Incorporation
+              About Delta Tech Force
             </span>
             <h2 className="font-heading text-3xl md:text-5xl font-bold text-[#0B131E] tracking-tight mt-4 leading-tight">
               An industrial machinery company built for serious business.
             </h2>
             <p className="text-[#475569] text-base leading-relaxed mt-6">
-              Delta Impex Incorporation is an industrial machinery manufacturer,
+              Delta Tech Force is an industrial machinery manufacturer,
               seller, and supplier in Jalandhar focused on
               providing reliable machine solutions for businesses and
               industries. We deal in CNC machines, plastic machines,
@@ -480,7 +480,7 @@ export default function Home() {
             for Your <span className="text-[#D4A017]">Business?</span>
           </h2>
           <p className="text-white/70 text-lg leading-relaxed mt-6 max-w-2xl mx-auto">
-            Contact Delta Impex Inc. today and share your machinery requirement.
+            Contact Delta Tech Force today and share your machinery requirement.
             Our team will help you find a suitable machine according to your
             work, budget, and industry needs.
           </p>

@@ -45,7 +45,7 @@ export default function BlogDetail() {
   return (
     <div data-testid="page-blog-detail">
       <SEO
-        title={`${post.title} | Delta Impex Inc.`}
+        title={`${post.title} | Delta Tech Force`}
         description={post.excerpt}
         path={`/blog/${post.slug}`}
         image={post.image}

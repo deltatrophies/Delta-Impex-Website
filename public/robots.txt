@@ -2,5 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://www.deltaimpexinc.com/sitemap.xml
-Host: www.deltaimpexinc.com
+Sitemap: https://www.deltatechforce.com/sitemap.xml
+Host: www.deltatechforce.com

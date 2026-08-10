@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <section className="min-h-[75vh] bg-[#0B131E] pt-32 pb-20 flex items-center">
       <SEO
-        title="Page Not Found | Delta Impex Inc."
+        title="Page Not Found | Delta Tech Force"
         description="The requested page could not be found."
         path="/404"
         noindex

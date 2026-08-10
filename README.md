@@ -1,17 +1,17 @@
-# Delta Impex Inc.
+# Delta Tech Force
 
 <p align="center">
-  <img src="public/Logo/delta-impex-logo-transparent.png" alt="Delta Impex Inc. logo" width="180" />
+  <img src="public/Logo/delta-impex-logo-transparent.png" alt="Delta Tech Force logo" width="180" />
 </p>
 
 <h3 align="center">Industrial Machinery Solutions for Modern Businesses</h3>
 
 <p align="center">
-  A production-ready React website for Delta Impex Inc., an industrial machinery manufacturer, seller, and supplier in Jalandhar, Punjab.
+  A production-ready React website for Delta Tech Force, an industrial machinery manufacturer, seller, and supplier in Jalandhar, Punjab.
 </p>
 
 <p align="center">
-  <a href="https://www.deltaimpexinc.com">Live Website</a>
+  <a href="https://www.deltatechforce.com">Live Website</a>
   |
   <a href="#website-preview">Preview</a>
   |
@@ -31,22 +31,22 @@
 
 ## Website Preview
 
-![Delta Impex homepage preview](docs/readme/home-preview.png)
+![Delta Tech Force homepage preview](docs/readme/home-preview.png)
 
 <table>
   <tr>
     <td width="50%">
-      <img src="docs/readme/products-preview.png" alt="Delta Impex products page preview" />
+      <img src="docs/readme/products-preview.png" alt="Delta Tech Force products page preview" />
     </td>
     <td width="50%">
-      <img src="docs/readme/product-detail-preview.png" alt="Delta Impex product detail page preview" />
+      <img src="docs/readme/product-detail-preview.png" alt="Delta Tech Force product detail page preview" />
     </td>
   </tr>
 </table>
 
 ## About The Project
 
-Delta Impex Inc. is a modern industrial machinery website built to present product categories, machine details, buyer guides, and enquiry workflows in a clean, trustworthy, and SEO-friendly experience.
+Delta Tech Force is a modern industrial machinery website built to present product categories, machine details, buyer guides, and enquiry workflows in a clean, trustworthy, and SEO-friendly experience.
 
 The site is designed for machinery buyers who need quick access to product information, current availability, machine applications, and direct enquiry options. It supports new and used industrial machines across CNC, plastic processing, woodworking, laser, sanding, and circular saw categories.
 
@@ -81,7 +81,7 @@ The site is designed for machinery buyers who need quick access to product infor
 ## Project Structure
 
 ```text
-Delta Impex/
+Delta Tech Force/
 |-- api/                 # Vercel enquiry function
 |-- docs/readme/         # README preview screenshots
 |-- public/              # Logos, favicons, videos, and image assets
@@ -168,20 +168,20 @@ After deployment, add `GOOGLE_SHEETS_WEBHOOK_URL` in Vercel for Production, Prev
 
 ## SEO Notes
 
-- Canonical URL: `https://www.deltaimpexinc.com`
+- Canonical URL: `https://www.deltatechforce.com`
 - Sitemap is generated during every build.
 - Product and blog metadata are managed from structured data files.
 - Organization, website, product, collection, and breadcrumb schemas are included.
-- After production deployment, submit `https://www.deltaimpexinc.com/sitemap.xml` in Google Search Console.
+- After production deployment, submit `https://www.deltatechforce.com/sitemap.xml` in Google Search Console.
 
 ## Contact
 
-Delta Impex Inc.  
+Delta Tech Force  
 No. 111-A, Janta Colony, Near Maqsudan, G.T. Road, Jalandhar, Punjab - 144001, India
 
 Phone: `+91 7669393511`  
 Email: `gsbedi99@gmail.com`  
-Website: [www.deltaimpexinc.com](https://www.deltaimpexinc.com)
+Website: [www.deltatechforce.com](https://www.deltatechforce.com)
 
 ---
 

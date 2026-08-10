@@ -62,15 +62,15 @@ export default function Contact() {
   return (
     <div data-testid="page-contact" className="bg-white">
       <SEO
-        title="Contact Machine Supplier in Jalandhar | Delta Impex Incorporation"
-        description="Contact Delta Impex Incorporation, a machine manufacturer, seller and supplier in Jalandhar, Punjab for CNC, plastic moulding, woodworking, laser, sanding and circular saw machine enquiries."
+        title="Contact Machine Supplier in Jalandhar | Delta Tech Force"
+        description="Contact Delta Tech Force, a machine manufacturer, seller and supplier in Jalandhar, Punjab for CNC, plastic moulding, woodworking, laser, sanding and circular saw machine enquiries."
         path="/contact"
-        image="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933062/delta-impex/images/pages/contact/hero-w2000.jpg"
+        image="/images/pages/contact/hero-w2000.jpg"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "ContactPage",
           url: `${SITE.url}/contact`,
-          name: "Contact Delta Impex Incorporation",
+          name: "Contact Delta Tech Force",
           mainEntity: { "@id": `${SITE.url}/#organization` },
         }}
       />
@@ -78,8 +78,8 @@ export default function Contact() {
       <section className="relative min-h-[60vh] flex items-center bg-[#0B131E] overflow-hidden pt-20">
         <div className="absolute inset-0">
           <img
-            src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933062/delta-impex/images/pages/contact/hero-w2000.jpg"
-            alt="Contact Delta Impex Incorporation"
+            src="/images/pages/contact/hero-w2000.jpg"
+            alt="Contact Delta Tech Force"
             className="w-full h-full object-cover opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B131E] via-[#0B131E]/85 to-[#0B131E]/40" />
@@ -92,7 +92,7 @@ export default function Contact() {
             data-testid="contact-hero-heading"
             className="font-heading text-4xl sm:text-5xl lg:text-7xl font-black text-white tracking-tight leading-[1.05] mt-6"
           >
-            Contact <span className="text-[#D4A017]">Delta Impex Incorporation</span>
+            Contact <span className="text-[#D4A017]">Delta Tech Force</span>
           </h1>
           <p className="text-lg text-white/75 max-w-2xl mt-6 leading-relaxed">
             Get in touch with a Jalandhar-based industrial machine seller and
@@ -194,7 +194,7 @@ export default function Contact() {
           </h2>
           <p className="text-white/70 text-lg leading-relaxed mt-6 max-w-2xl mx-auto">
             Whether you need a new machine, old machine, or guidance about a
-            suitable machine category, Delta Impex Incorporation is ready to help.
+            suitable machine category, Delta Tech Force is ready to help.
           </p>
           <a
             href="#enquiry"

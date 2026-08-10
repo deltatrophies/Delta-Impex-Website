@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const SPLASH_SEEN_KEY = "delta-impex-splash-seen";
+const SPLASH_SEEN_KEY = "delta-tech-force-splash-seen";
 const SPLASH_DURATION_MS = 3600;
 
 export default function SplashScreen() {
@@ -39,20 +39,20 @@ export default function SplashScreen() {
     <div
       className={`splash-screen ${leaving ? "splash-screen--leaving" : ""}`}
       role="status"
-      aria-label="Loading Delta Impex Inc."
+      aria-label="Loading Delta Tech Force"
     >
       <div className="splash-screen__content">
         <div className="splash-screen__logo-wrap">
           <img
             className="splash-screen__logo"
-            src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto/v1785933005/delta-impex/Logo/delta-impex-logo-transparent.png"
-            alt="Delta Impex Inc."
+            src="/Logo/delta-impex-logo-transparent.png"
+            alt="Delta Tech Force"
           />
         </div>
         <div className="splash-screen__name" aria-hidden="true">
           <span>Delta</span>
-          <strong>Impex</strong>
-          <span>Incorporation</span>
+          <strong>Tech</strong>
+          <span>Force</span>
         </div>
         <div className="splash-screen__line" aria-hidden="true">
           <span />

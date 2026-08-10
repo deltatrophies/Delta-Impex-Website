@@ -97,8 +97,8 @@ export default function ProductDetail() {
   return (
     <div data-testid="page-product-detail" className="bg-white">
       <SEO
-        title={`${product.name} | Delta Impex Inc.`}
-        description={`${product.description} Contact Delta Impex Inc., an industrial machine seller and supplier in Jalandhar, Punjab, for availability and details.`}
+        title={`${product.name} | Delta Tech Force`}
+        description={`${product.description} Contact Delta Tech Force, an industrial machine seller and supplier in Jalandhar, Punjab, for availability and details.`}
         path={`/products/${product.slug}`}
         image={product.image}
         type="product"
@@ -277,7 +277,7 @@ export default function ProductDetail() {
                 Contact for Price
               </p>
               <p className="text-white/65 text-sm mt-3 leading-relaxed">
-                Reach out to Delta Impex Inc. for current pricing, lead time, and
+                Reach out to Delta Tech Force for current pricing, lead time, and
                 customization options for this machine.
               </p>
             </div>

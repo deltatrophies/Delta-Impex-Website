@@ -43,7 +43,7 @@ export default function LocationMap() {
     })
       .addTo(map)
       .bindPopup(
-        `<strong>Delta Impex Inc.</strong><br/>${CONTACT_DETAILS.address}`,
+        `<strong>Delta Tech Force</strong><br/>${CONTACT_DETAILS.address}`,
         {
           className: "delta-map-popup",
           minWidth: 300,
@@ -74,7 +74,7 @@ export default function LocationMap() {
       ref={containerRef}
       data-testid="location-map"
       className="relative z-0 isolate h-full w-full"
-      aria-label="Interactive map showing Delta Impex Inc. location"
+      aria-label="Interactive map showing Delta Tech Force location"
     />
   );
 }
