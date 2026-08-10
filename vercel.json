@@ -56,28 +56,6 @@
       "has": [
         {
           "type": "host",
-          "value": "deltaimpexinc.com"
-        }
-      ],
-      "destination": "https://www.deltatechforce.com/$1",
-      "permanent": true
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.deltaimpexinc.com"
-        }
-      ],
-      "destination": "https://www.deltatechforce.com/$1",
-      "permanent": true
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
           "value": "delta-impex-website.vercel.app"
         }
       ],
