@@ -64,14 +64,14 @@ export default function About() {
         title="About Delta Tech Force | Industrial Machinery Company"
         description="Learn about Delta Tech Force, a Jalandhar-based supplier of new and used CNC, plastic, woodworking, laser, sanding and circular saw machines."
         path="/about"
-        image="/images/pages/about/hero-w2000.jpg"
+        image="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto:best/v1785933059/delta-impex/images/pages/about/hero-w2000.jpg"
         structuredData={aboutSchema}
       />
       {/* HERO */}
       <section className="relative min-h-[70vh] flex items-center bg-[#0B131E] overflow-hidden pt-20">
         <div className="absolute inset-0">
           <img
-            src="/images/pages/about/hero-w2000.jpg"
+            src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto:best/v1785933059/delta-impex/images/pages/about/hero-w2000.jpg"
             alt="Delta Tech Force workshop"
             className="w-full h-full object-cover opacity-45"
           />
@@ -116,7 +116,7 @@ export default function About() {
           </div>
           <div className="lg:col-span-6">
             <img
-              src="/images/pages/about/workshop-w1400.png"
+              src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto:best/v1785933061/delta-impex/images/pages/about/workshop-w1400.png"
               alt="Company"
               className="w-full h-[460px] object-cover rounded-sm"
             />

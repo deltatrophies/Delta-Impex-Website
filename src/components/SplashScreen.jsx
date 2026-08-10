@@ -46,7 +46,7 @@ export default function SplashScreen() {
         <div className="splash-screen__logo-wrap">
           <img
             className="splash-screen__logo"
-            src="/Logo/delta-tech-force-logo-optimized.webp"
+            src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto:best,w_1200/v1785933005/delta-impex/Logo/delta-impex-logo-transparent.png"
             alt="Delta Tech Force"
             width="900"
             height="576"

@@ -44,7 +44,7 @@ export default function Navbar() {
             className="flex items-center gap-3 group"
           >
             <img
-              src="/Logo/delta-impex-logo-transparent.png"
+              src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto:best,w_1200/v1785933005/delta-impex/Logo/delta-impex-logo-transparent.png"
               alt="Delta Tech Force"
               className="h-12 w-auto object-contain"
             />

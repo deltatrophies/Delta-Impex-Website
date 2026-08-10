@@ -65,7 +65,7 @@ export default function Contact() {
         title="Contact Machine Supplier in Jalandhar | Delta Tech Force"
         description="Contact Delta Tech Force, a machine manufacturer, seller and supplier in Jalandhar, Punjab for CNC, plastic moulding, woodworking, laser, sanding and circular saw machine enquiries."
         path="/contact"
-        image="/images/pages/contact/hero-w2000.jpg"
+        image="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto:best/v1785933062/delta-impex/images/pages/contact/hero-w2000.jpg"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "ContactPage",
@@ -78,7 +78,7 @@ export default function Contact() {
       <section className="relative min-h-[60vh] flex items-center bg-[#0B131E] overflow-hidden pt-20">
         <div className="absolute inset-0">
           <img
-            src="/images/pages/contact/hero-w2000.jpg"
+            src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto:best/v1785933062/delta-impex/images/pages/contact/hero-w2000.jpg"
             alt="Contact Delta Tech Force"
             className="w-full h-full object-cover opacity-40"
           />

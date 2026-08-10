@@ -97,7 +97,7 @@ export default function Products() {
         title="Industrial Machines for Sale in Jalandhar | Delta Tech Force"
         description="Explore new and used industrial machines for sale in Jalandhar from Delta Tech Force, including CNC, plastic moulding, woodworking, drilling, laser, sanding and circular saw machines."
         path="/products"
-        image="/images/pages/products/hero-w2000.jpg"
+        image="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto:best/v1785933066/delta-impex/images/pages/products/hero-w2000.jpg"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
@@ -120,7 +120,7 @@ export default function Products() {
       <section className="relative min-h-[60vh] flex items-center bg-[#0B131E] overflow-hidden pt-20">
         <div className="absolute inset-0">
           <img
-            src="/images/pages/products/hero-w2000.jpg"
+            src="https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto:best/v1785933066/delta-impex/images/pages/products/hero-w2000.jpg"
             alt="Industrial products"
             className="w-full h-full object-cover opacity-45"
           />

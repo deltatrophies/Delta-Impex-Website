@@ -9,8 +9,8 @@ export const SITE = {
     "Delta Tech Force is an industrial machine manufacturer, seller and supplier in Jalandhar, Punjab for CNC, plastic moulding, woodworking, laser, sanding and circular saw machines.",
   keywords:
     "machine manufacturer in Jalandhar, machine seller in Jalandhar, industrial machinery supplier in Punjab, industrial machines for sale in Jalandhar, CNC machine supplier, plastic moulding machine supplier, woodworking machine supplier, laser machine supplier, sanding machine supplier, circular saw machine supplier",
-  defaultImage: "/images/pages/home/hero-industrial-machinery-w2000.jpg",
-  logo: "/Logo/delta-impex-logo-transparent.png",
+  defaultImage: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto:best/v1785933064/delta-impex/images/pages/home/hero-industrial-machinery-w2000.jpg",
+  logo: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto:best,w_1200/v1785933005/delta-impex/Logo/delta-impex-logo-transparent.png",
 };
 
 export const absoluteUrl = (path = "/") => {

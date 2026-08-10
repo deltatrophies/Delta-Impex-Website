@@ -8,7 +8,7 @@ export const BLOG_POSTS = [
     published: "2026-06-28",
     updated: "2026-06-28",
     readTime: "8 min read",
-    image: "/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
+    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto:best/v1785933009/delta-impex/images/machinery/cnc-machines/cnc-cutting-machine-type-1/front-view.png",
     imageAlt: "Industrial CNC cutting machine for workshop production",
     keywords: [
       "CNC cutting machine buying guide",
@@ -82,7 +82,7 @@ export const BLOG_POSTS = [
     published: "2026-06-20",
     updated: "2026-06-20",
     readTime: "7 min read",
-    image: "/images/pages/home/workshop-preview-w1400.jpg",
+    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto:best/v1785933065/delta-impex/images/pages/home/workshop-preview-w1400.jpg",
     imageAlt: "Industrial workshop with machinery available for business production",
     keywords: [
       "new vs used industrial machinery",
@@ -153,7 +153,7 @@ export const BLOG_POSTS = [
     published: "2026-06-12",
     updated: "2026-06-12",
     readTime: "8 min read",
-    image: "/images/machinery/plastic-machines/plastic-moulding-machine-type-2/front-view.png",
+    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto:best/v1785933028/delta-impex/images/machinery/plastic-machines/plastic-moulding-machine-type-2/front-view.png",
     imageAlt: "Automatic plastic moulding machine for industrial manufacturing",
     keywords: [
       "plastic moulding machine buying guide",
@@ -226,7 +226,7 @@ export const BLOG_POSTS = [
     published: "2026-06-04",
     updated: "2026-06-04",
     readTime: "7 min read",
-    image: "/images/machinery/wood-working-machines/router-machine/front-view.png",
+    image: "https://res.cloudinary.com/dliriew7z/image/upload/f_auto,q_auto:best/v1785933053/delta-impex/images/machinery/wood-working-machines/router-machine/front-view.png",
     imageAlt: "Wood router machine used in a production workshop",
     keywords: [
       "woodworking machines for workshop",
