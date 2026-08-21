@@ -16,7 +16,7 @@ const VALUES = [
   {
     icon: ShieldCheck,
     title: "Quality",
-    text: "We focus on machines that are useful, reliable, and suitable for industrial needs.",
+    text: "We focus on machine that are useful, reliable, and suitable for industrial needs.",
   },
   {
     icon: Handshake,
