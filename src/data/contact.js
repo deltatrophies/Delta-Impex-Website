@@ -1,6 +1,6 @@
 export const CONTACT_DETAILS = {
   phone: "+91 7669393511",
-  email: "gsbedi99@gmail.com",
+  email: "gsbedi_99@yahoo.com",
   address:
     "No. 111-A, Janta Colony, Near Maqsudan, G.T. Road, Jalandhar, Punjab - 144001, India",
   googleMapsEmbedUrl:

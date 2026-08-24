@@ -180,7 +180,7 @@ Delta Tech Force
 No. 111-A, Janta Colony, Near Maqsudan, G.T. Road, Jalandhar, Punjab - 144001, India
 
 Phone: `+91 7669393511`  
-Email: `gsbedi99@gmail.com`  
+Email: `gsbedi_99@yahoo.com`  
 Website: [www.deltatechforce.com](https://www.deltatechforce.com)
 
 ---

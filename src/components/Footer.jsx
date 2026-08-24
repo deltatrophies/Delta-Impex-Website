@@ -115,7 +115,7 @@ export default function Footer() {
               </li>
             )}
             <li className="flex items-start gap-3">
-              <MapPin className="w-4 h-4 text-[#D4A017] mt-1" />
+              <MapPin className="w-4 h-4 shrink-0 text-[#D4A017] mt-1" />
               <a
                 data-testid="footer-address"
                 href={CONTACT_DETAILS.googleMapsUrl}
